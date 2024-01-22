@@ -1,7 +1,150 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/uikit.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/uikit.js"></script>
+    <script src="js/uikit-icons.js"></script>
+
+    <title>Roxy's Portfolio</title>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<!-- Navigation Bar -->
+    <nav class="uk-navbar-container uk-margin-small-left uk-margin-small-right uk-visible@m uk-margin-xlarge-left uk-margin-xlarge-right" uk-navbar uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+    
+    <div class="uk-navbar-left">
+        <a href="" class="uk-navbar-item uk-logo uk-dark">Roxanne Campbell</a>
+    </div>
+    <div class="uk-navbar-right">
+
+        <ul class="uk-navbar-nav uk-dark">
+            <li><a class="uk-button-text uk-text-capitalize" href="#projects" uk-scroll>Projects</a></li>
+            <li><a class="uk-button-text uk-text-capitalize" href="#about" uk-scroll>About</a></li>
+            <li><a class="uk-button-text uk-text-capitalize" href="mailto:roxannecampbell244@gmail.com" uk-scroll>Contact</a></li>
+
+        </ul>
+
+    </div>
+</nav>
+<!-- Navigation Bar Ends  -->
+
+<!-- Navigation Bar Mobile -->
+<nav class="uk-navbar-container uk-margin-small-left uk-margin-small-right uk-hidden@m uk-margin-xlarge-left uk-margin-xlarge-right" uk-navbar uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+    
+    <div class="uk-navbar-left">
+        <a href="" class="uk-navbar-item uk-logo uk-dark">Roxanne Campbell</a>
+    </div>
+    <div class="uk-navbar-right">
+
+        <ul class="uk-navbar-nav uk-dark">
+            <li><button uk-toggle="target: #offcanvas-nav" type="button" uk-navbar-toggle-icon></button></li>
+
+        </ul>
+
+    </div>
+</nav>
+<div id="offcanvas-nav" uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+
+        <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+            <li class="uk-active"><a href="#" uk-scroll>Home</a></li>
+            <li class="uk-active"><a href="#projects" uk-scroll>Projects</a></li>
+            <li class="uk-active"><a href="#about" uk-scroll>About</a></li>
+            <li class="uk-active"><a href="mailto:roxannecampbell244@gmail.com">Contact</a></li> <!--- change to ur email-->
+
+        </ul>
+
+
+
+
+    </div>
+</div>
+
+<!-- Navigation Bar Mobile Ends -->
+<!-- Home -->
+<section class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
+    <h1 class="uk-margin-xlarge-left uk-dark uk-text-left uk-margin-xlarge-right">I'm Roxanne Campbell, a Multi-Language Developer, Graphics Programmer, and 3D Artist.</h1>
+    <a href="#projects" class="uk-margin-xlarge-left uk-text-capitalize uk-button uk-button-default" uk-scroll>Projects</a>
+
+
+</section>
+
+<!-- Home Ends -->
+<br>
+<br>
+
+<!-- Projects Section -->
+<hr class="uk-margin-xlarge-left uk-margin-xlarge-right">
+<section id="projects" class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
+<h2 class="uk-margin-xlarge-left uk-dark">Projects</h3>
+<p class="uk-margin-xlarge-left">A few of the things I've gotten to work on!</p>
+
+<div class="uk-margin-xlarge-left uk-margin-xlarge-right">
+
+    <div class="uk-margin uk-card uk-card-secondary uk-card-body ">
+        <h4>Rowland's Adventure</h4>
+        <p>This game was my entry to the Mini Jam 107 game jam on Itch.io, where the theme was "Gravity is Under Your Control". I made a cute little 3D platformer, with the twist that when you jump, all other physics objects jump as well, almost like when you jump you flip gravity! I had lots of ambition for this project, but it was way too much for a 3 day jam, and in the end I barely managed to finish a much smaller version. It is still lots of fun and I'm proud of what I could make in such a short time!</p>
+        <div class="uk-grid-column-small uk-grid-row-small uk-child-width-1-3@s uk-text-center uk-margin-bottom" uk-grid>
+            <div>
+                <img src="images/project1/rowlandtitle.png" alt="banner" />
+            </div>
+            <div>
+                <img src="images/project1/rowland.png" alt="banner" />
+            </div>
+            <div>
+                <img src="images/project1/rowlandgif.gif" alt="banner" />
+            </div>
+            <div>
+                <img src="images/project1/rowlandgif2.gif" alt="banner" />
+            </div>
+            <div>
+                <img src="images/project1/rowland2.png" alt="banner" />
+            </div>
+            <div>
+                <img src="images/project1/rowland3.png" alt="banner" />
+            </div>
+        </div>
+        <a class="uk-button-text uk-text-decoration-none" href="https://serialboxes.itch.io/rowlands-adventure">
+            <span uk-icon="icon: link">
+            </span> Itch.io Page </a>
+        </div>
+
+    <div class="uk-margin uk-card uk-card-secondary uk-card-body ">
+        <h4>Project Name</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <a class="uk-button-text uk-text-decoration-none" href="">
+            <span uk-icon="icon: link">
+            </span> Website Link </a>
+        </div></div>
+
+
+
+    <br>
+
+
+</section>
+<hr class="uk-margin-xlarge-left uk-margin-xlarge-right">
+</div>
+<!-- Projects Section Ends -->
+
+<!-- About Me -->
+<section id="about" class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-small-bottom">
+<h3 class="uk-margin-xlarge-left uk-light">About Me</h3>
+<!-- Change here to ur paragraph -->
+<p class="uk-margin-xlarge-left uk-margin-xlarge-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eleifend posuere tortor vel lobortis. Morbi pretium in sapien non suscipit. Nam ac efficitur enim. Vestibulum accumsan erat sit amet nulla commodo, nec varius felis aliquam. Aliquam suscipit mauris lacus, at euismod purus tempor aliquam. Donec varius sem nisl. Fusce augue tortor, hendrerit at elit quis, aliquet blandit eros. Nam gravida sem velit, eu placerat nunc commodo ut. <br><br>Maecenas ultricies magna nec nisi egestas, in posuere velit tincidunt. Nam quis turpis non ligula dapibus bibendum sit amet at felis. Vestibulum ornare tempor nulla, quis sodales ex consequat vel. Morbi sollicitudin ligula eget mattis euismod. Nulla scelerisque malesuada arcu a vulputate. Phasellus ac lectus consequat, eleifend libero id, tincidunt lectus. Sed tempus gravida odio, sed semper neque aliquet imperdiet.</p>
+<a href="" class="uk-margin-xlarge-left uk-button-text" uk-icon="instagram"></a> &nbsp;<a href="" class="uk-button-text" uk-icon="dribbble"></a> &nbsp;<a href="" class="uk-button-text" uk-icon="github"></a> &nbsp;<a href="" class="uk-button-text" uk-icon="linkedin"></a>
+
+<!-- About Me Ends -->
+
+
+
+
+</section>
+
+<hr class="uk-margin-xlarge-left uk-margin-xlarge-right uk-margin-xlarge-bottom">
+    
 </body>
 </html>
