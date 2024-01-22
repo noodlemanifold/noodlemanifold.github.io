@@ -8547,19 +8547,19 @@ iframe[data-uk-cover] {
   margin-bottom: 70px;
 }
 * + .uk-margin-xlarge {
-  margin-top: 70px !important;
+  margin-top: 40px !important;
 }
 .uk-margin-xlarge-top {
-  margin-top: 70px !important;
+  margin-top: 40px !important;
 }
 .uk-margin-xlarge-bottom {
-  margin-bottom: 70px !important;
+  margin-bottom: 40px !important;
 }
 .uk-margin-xlarge-left {
-  margin-left: 70px !important;
+  margin-left: 16px !important;
 }
 .uk-margin-xlarge-right {
-  margin-right: 70px !important;
+  margin-right: 16px !important;
 }
 /* Desktop and bigger */
 @media (min-width: 1200px) {
