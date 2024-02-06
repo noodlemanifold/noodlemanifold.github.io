@@ -152,17 +152,17 @@
     <div id="reminder" class="uk-margin uk-card uk-card-secondary uk-card-body ">
         <h4>Soft Reminder</h4>
         <p>I needed a periodic, soft and silent reminder for therapy work, but I could not find any apps that allowed this, so I made one myself! This is a simple Android app that runs a custom vibration pattern at a user defined rate. An app must have a foreground process to use the vibration motor, so I had to start up a foreground service from the background repeatedly. I used Android's Alarm Scheduler API, since precise timing was important to me. This approach is suprisingly kind to battery life, probably because my foreground service is so simple. The UI was made in Jetpack Compose, which might be the best UI framework ever concieved I love it.</p>
-        <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="finite: true">
-            <ul class="uk-slider-items uk-child-width-1-4@s uk-child-width-1-4@ uk-grid-small">
-                <li>
-                    <img src="images/project2/reminder1.png" alt="banner" />
-                </li>
-                <li>
-                    <img src="images/project2/reminder2.png" alt="banner" />
-                </li>
-            </ul>
-            <a class="uk-position-center-left uk-position-small" href uk-slidenav-previous uk-slider-item="previous"></a>
-            <a class="uk-position-center-right uk-position-small" href uk-slidenav-next uk-slider-item="next"></a>
+
+        <div class="uk-child-width-expand uk-grid-small uk-text-center" uk-grid>
+            <div class="uk-width-1-4@s uk-width-1-4@">
+                <img src="images/project2/reminder1.png" alt="banner" />
+            </div>
+            <div class="uk-width-1-4@s uk-width-1-4@">
+                <img src="images/project2/reminder2.png" alt="banner" />
+            </div>
+            <div>
+                <img src="images/project2/reminder3.png" alt="banner" />
+            </div>
         </div>
     </div>
 
