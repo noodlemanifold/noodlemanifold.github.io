@@ -13,7 +13,7 @@
 </head>
 <body>
 <!-- Navigation Bar -->
-    <nav class="uk-navbar-container uk-visible@m " uk-navbar uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+<nav class="uk-navbar-container uk-visible@m " uk-navbar uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
     
     <div class="uk-navbar-left">
         <a href="" class="uk-navbar-item uk-logo uk-dark uk-margin-xlarge-left">Roxanne Campbell</a>
@@ -21,9 +21,25 @@
     <div class="uk-navbar-right uk-margin-xlarge-right">
 
         <ul class="uk-navbar-nav uk-dark">
-            <li><a class="uk-button-text uk-text-capitalize" href="#projects" uk-scroll>Projects</a></li>
-            <li><a class="uk-button-text uk-text-capitalize" href="#about" uk-scroll>About</a></li>
-            <li><a class="uk-button-text uk-text-capitalize" href="#contact">Contact</a></li>
+            <li><a class="uk-button-text uk-text-capitalize" href="#projects"  uk-scroll="offset: 100">Projects</a>
+                <div uk-dropdown="pos: bottom-center">
+                    <ul class="uk-nav uk-dropdown-nav">
+                        <li><a href="#rowland" uk-scroll="offset: 100">Rowland's Adventure</a></li>
+                        <li><a href="#reminder" uk-scroll="offset: 100">Soft Reminder App</a></li>
+                        <li><a href="#bookstore" uk-scroll="offset: 100">Wooden Croaks Bookstore</a></li>
+                        <li><a href="#senior" uk-scroll="offset: 100">Senior Project</a></li>
+                        <li><a href="#cookie" uk-scroll="offset: 100">Cookie Climber</a></li>
+                        <li><a href="#wifi" uk-scroll="offset: 100">Wifi Website School Project</a></li>
+                        <li><a href="#solitaire" uk-scroll="offset: 100">Serial Solitaire</a></li>
+                        <li><a href="#blender" uk-scroll="offset: 100">3D Artwork Showcase</a></li>
+                        <li><a href="#desert" uk-scroll="offset: 100">Desert Bus 3D</a></li>
+                        <li><a href="#graphs" uk-scroll="offset: 100">Unity 3D Graphing Library</a></li>
+                        <li><a href="#life" uk-scroll="offset: 100">3D Game of Life</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a class="uk-button-text uk-text-capitalize" href="#about" uk-scroll="offset: 100" uk-scroll>About</a></li>
+            <li><a class="uk-button-text uk-text-capitalize" href="#contact" uk-scroll="offset: 100">Contact</a></li>
 
         </ul>
 
@@ -49,11 +65,28 @@
 <div id="offcanvas-nav" uk-offcanvas="overlay: true">
     <div class="uk-offcanvas-bar uk-flex uk-flex-column">
 
-        <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+        <ul class="uk-nav uk-nav-primary uk-nav-center ">
             <li class="uk-active"><a href="#" uk-scroll>Home</a></li>
-            <li class="uk-active"><a href="#projects" uk-scroll>Projects</a></li>
-            <li class="uk-active"><a href="#about" uk-scroll>About</a></li>
-            <li class="uk-active"><a href="#contact">Contact</a></li>
+            <li><a class="uk-button-text uk-text-capitalize">Projects</a>
+                <div uk-dropdown="shift: false; flip: false">
+                    <ul class="uk-nav uk-dropdown-nav">
+                        <li><a href="#projects" uk-scroll="offset: 100">Projects</a></li>
+                        <li><a href="#rowland" uk-scroll="offset: 100">Rowland's Adventure</a></li>
+                        <li><a href="#reminder" uk-scroll="offset: 100">Soft Reminder App</a></li>
+                        <li><a href="#bookstore" uk-scroll="offset: 100">Wooden Croaks Bookstore</a></li>
+                        <li><a href="#senior" uk-scroll="offset: 100">Senior Project</a></li>
+                        <li><a href="#cookie" uk-scroll="offset: 100">Cookie Climber</a></li>
+                        <li><a href="#wifi" uk-scroll="offset: 100">Wifi Website School Project</a></li>
+                        <li><a href="#solitaire" uk-scroll="offset: 100">Serial Solitaire</a></li>
+                        <li><a href="#blender" uk-scroll="offset: 100">3D Artwork Showcase</a></li>
+                        <li><a href="#desert" uk-scroll="offset: 100">Desert Bus 3D</a></li>
+                        <li><a href="#graphs" uk-scroll="offset: 100">Unity 3D Graphing Library</a></li>
+                        <li><a href="#life" uk-scroll="offset: 100">3D Game of Life</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a class="uk-button-text uk-text-capitalize" href="#about" uk-scroll="offset: 100" uk-scroll>About</a></li>
+            <li><a class="uk-button-text uk-text-capitalize" href="#contact" uk-scroll="offset: 100">Contact</a></li>
 
         </ul>
 
@@ -66,7 +99,7 @@
 <!-- Navigation Bar Mobile Ends -->
 <!-- Home -->
 <section class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
-    <h1 class="uk-margin-xlarge-left uk-dark uk-text-left uk-margin-xlarge-right">I'm Roxanne Campbell, a Multi-Language Developer, Graphics Programmer, and 3D Artist.</h1>
+    <h1 class="uk-margin-xlarge-left uk-dark uk-text-left uk-margin-xlarge-right">I'm Roxanne Campbell, a Diversified Developer, Graphics Programmer, and 3D Artist.</h1>
     <a href="#projects" class="uk-margin-xlarge-left uk-text-capitalize uk-button uk-button-default" uk-scroll>Projects</a>
 
 
@@ -80,238 +113,269 @@
 <hr class="uk-margin-xlarge-left uk-margin-xlarge-right">
 <section id="projects" class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
 <h2 class="uk-margin-xlarge-left uk-dark">Projects</h3>
-<p class="uk-margin-xlarge-left">A few of the things I've gotten to work on!</p>
 
 <div class="uk-margin-xlarge-left uk-margin-xlarge-right">
 
-    <div class="uk-margin uk-card uk-card-secondary uk-card-body ">
+    <div id="rowland" class="uk-margin uk-card uk-card-secondary uk-card-body ">
         <h4>Rowland's Adventure</h4>
-        <p>This was a much-to-ambitious 3D Platformer with a gravity gimmick for a 3 day game jam. Despite this, I still managed to finish a cute little demo before the deadline, and its fun! The character controller, gravity system, character model, and levels were all done by me from scratch. I learned a lot about level design and how to communicate silently with the player, as well as how to prototype levels quickly.</p>
-        <div class="uk-grid-column-small uk-grid-row-small uk-child-width-1-3@s uk-text-center uk-margin-bottom" uk-grid>
-            <div>
-                <img src="images/project1/rowlandtitle.png" alt="banner" />
-            </div>
-            <div>
-                <img src="images/project1/rowland.png" alt="banner" />
-            </div>
-            <div>
-                <img src="images/project1/rowlandgif.gif" alt="banner" />
-            </div>
-            <div>
-                <img src="images/project1/rowlandgif2.gif" alt="banner" />
-            </div>
-            <div>
-                <img src="images/project1/rowland2.png" alt="banner" />
-            </div>
-            <div>
-                <img src="images/project1/rowland3.png" alt="banner" />
-            </div>
+        <p>This was my entry for a 2 day game jam about controlling gravity, mostly inspired by Super Mario Galaxy. The gravity effect was accomplished by detecting planets with large triggers, and then determining the direction of gravity with a specialized function that accounts for the player's relative position and the shape of the planet. I wanted to avoid the raycast method, it has proven itself janky to me in the past. I modelled the character myself in Blender and animated it procedurally in C#. This way my first attempt at designing a level with a silent tutorial and a gradual difficulty progression. Playtests showed it wasn't quite effective, and unfortunately I ran out of time to fix it. I learned that if you wish to communicate to the player without words, you must use precise colors and symbols as your language instead.</p>
+        <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="finite: true">
+            <ul class="uk-slider-items uk-child-width-1-4@s uk-child-width-1-4@ uk-grid-small">
+                <li>
+                    <img src="images/project1/rowlandtitle.png" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project1/rowland.png" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project1/rowlandgif.gif" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project1/rowlandgif2.gif" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project1/rowland2.png" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project1/rowland3.png" alt="banner" />
+                </li>
+            </ul>
+            <a class="uk-position-center-left uk-position-small" href uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small" href uk-slidenav-next uk-slider-item="next"></a>
         </div>
         <a class="uk-button-text uk-text-decoration-none" href="https://serialboxes.itch.io/rowlands-adventure">
             <span uk-icon="icon: link">
             </span> Itch.io Page </a>
-        </div>
+    </div>
 
-    <div class="uk-margin uk-card uk-card-secondary uk-card-body ">
+    <div id="reminder" class="uk-margin uk-card uk-card-secondary uk-card-body ">
         <h4>Soft Reminder</h4>
-        <p>I needed a periodic, soft and silent reminder for therapy work, but I could not find any apps that allowed this, so I did it myself! This is a simple Android app that runs a custom vibration pattern at a user set rate. Unfortunately I cannot publish it on the Play Store because it needs to constantly set alarms to start foreground services in order to function. It works reliably and has helped me quite a bit! This project taught me Kotlin basics, the Android Process Lifecycle, and the Jetpack Compose UI Framework.</p>
-        <div class="uk-grid-column-small uk-grid-row-small uk-child-width-1-4@s uk-text-center uk-margin-bottom" uk-grid>
-            <div>
-                <img src="images/project2/reminder1.png" alt="banner" />
-            </div>
-            <div>
-                <img src="images/project2/reminder2.png" alt="banner" />
-            </div>
+        <p>I needed a periodic, soft and silent reminder for therapy work, but I could not find any apps that allowed this, so I made one myself! This is a simple Android app that runs a custom vibration pattern at a user defined rate. An app must have a foreground process to use the vibration motor, so I had to start up a foreground service from the background repeatedly. I used Android's Alarm Scheduler API, since precise timing was important to me. This approach is suprisingly kind to battery life, probably because my foreground service is so simple. The UI was made in Jetpack Compose, which might be the best UI framework ever concieved I love it.</p>
+        <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="finite: true">
+            <ul class="uk-slider-items uk-child-width-1-4@s uk-child-width-1-4@ uk-grid-small">
+                <li>
+                    <img src="images/project2/reminder1.png" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project2/reminder2.png" alt="banner" />
+                </li>
+            </ul>
+            <a class="uk-position-center-left uk-position-small" href uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small" href uk-slidenav-next uk-slider-item="next"></a>
         </div>
     </div>
 
-    <div class="uk-margin uk-card uk-card-secondary uk-card-body ">
+    <div id="bookstore" class="uk-margin uk-card uk-card-secondary uk-card-body ">
         <h4>Wooden Croaks Bookstore</h4>
-        <p>This was a group project with other developers I met in a discord. The idea was you ran a magical bookstore with gameplay similar to the game Unpacking. I coded the placement grid, holding and moving objects, a menu system, a dialogue system, a game sequencing system, and the audio system, while also doing the graphics programming for the grass & outline effects. I also made all the temporary props used in the demo. Unfortunately, my team members we unable to contribute much themselves, and the project eventually died. Honestly I'm still sad about it, I put in so much work and had so much passion for this game. At least I still learned a lot about Compute Shaders and Unity's new Universal Render Pipeline along the way, and I'm incredibly proud of what I was able to make for it.</p>
-        <div class="uk-grid-column-small uk-grid-row-small uk-child-width-1-3@s uk-text-center uk-margin-bottom" uk-grid>
-            <div>
-                <img src="images/project3/bookstore1.png" alt="banner" />
-            </div>
-            <div>
-                <img src="images/project3/bookstore2.png" alt="banner" />
-            </div>
-            <div>
-                <img src="images/project3/bookstoregif1.gif" alt="banner" />
-            </div>
-            <div>
-                <img src="images/project3/craig2.gif" alt="banner" />
-            </div>
-            <div>
-                <img src="images/project3/bookstore3.png" alt="banner" />
-            </div>
-            <div>
-                <img src="images/project3/bookstoregif3.gif" alt="banner" />
-            </div>
-            <div>
-                <img src="images/project3/bookstore4.png" alt="banner" />
-            </div>
-            <div>
-                <img src="images/project3/bookstoregif2.gif" alt="banner" />
-            </div>
+        <p>This game was a group project was a fantastical take on the game Unpacking, where you run a bookstore in a magic forest. I ended up doing a lot of work on the project. I programmed the holding and placing prop mechanics, which work by defining a grid in world space, and snapping objects to that grid based on how many squares their footprint occupies. I made an outline shader effect, which is a Scriptable Renderer Feature in Unity's URP that renders all the object silhouettes to a render texture with a different color. It then runs an edge detection pass over the color, depth, and normal buffers to detect edges, and blits the black outline pixels back to the camera's color buffer. It looks good but is finicky to calibrate, and I have since moved on to outline effects with manually defined edges. I also made grass that uses GPU instancing to draw a large number of blades at very high speeds, and then animate each blade in a vertex shader that offsets the blade tips depending on a wind texture that I generate procedurally in a compute shader. </p>
+        <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="finite: true">
+            <ul class="uk-slider-items uk-child-width-1-4@s uk-child-width-1-4@ uk-grid-small">
+                <li>
+                    <img src="images/project3/bookstore1.png" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project3/bookstoregif1.gif" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project3/bookstoregif3.gif" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project3/bookstoregif2.gif" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project3/craig2.gif" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project3/bookstore2.png" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project3/bookstore3.png" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project3/bookstore4.png" alt="banner" />
+                </li>
+            </ul>
+            <a class="uk-position-center-left uk-position-small" href uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small" href uk-slidenav-next uk-slider-item="next"></a>
         </div>
+        
     </div>
 
-    <div class="uk-margin uk-card uk-card-secondary uk-card-body ">
+    <div id="senior" class="uk-margin uk-card uk-card-secondary uk-card-body ">
         <h4>Senior Project</h4>
-        <p>We are developing a custom dashboard display and onboard computer for the Engineering Department's experimental electric offroad racecar. It uses a Linux box that is running a custom OpenGL UI on a touch display, as well as logging telemetry from all the sensors on the vehicle. I am on the team developing the backend, which manages processes and state. I have written scripts to create synthetic data streams to test logging, as well as some of the logging logic itself.</p>
+        <p>My senior project team is developing a custom dashboard display and onboard computer for the Engineering Department's experimental electric offroad racecar. It uses a Linux box that is running a custom OpenGL UI on a touch display, as well as logging telemetry from all the sensors on the vehicle. I am working on developing the backend, which manages all the running processes and facilitates data transfer between them. I have written scripts to create synthetic data streams to test logging, take live incoming data and write it to a CSV file, and recover files that may be corrupted if the system's power is unexpectedly cut.</p>
     </div>
 
-    <div class="uk-margin uk-card uk-card-secondary uk-card-body ">
+    <div id="cookie" class="uk-margin uk-card uk-card-secondary uk-card-body ">
         <h4>Cookie Climber</h4>
-        <p>This is the first finished game of the Video Game Design Club at my University! I was less involved, as I was on the other team, but I helped some programmers on this project learn Unity. When my team fell apart, I joined this project and helped fix bugs and add polish in the last weeks. Some of my art from the dead project was also recycled into this one! This game turned out so well considering it was many people's first ever game!</p>
-        <div class="uk-grid-column-small uk-grid-row-small uk-child-width-1-3@s uk-text-center uk-margin-bottom" uk-grid>
-            <div>
-                <img src="images/project5/cookie1.png" alt="banner" />
-            </div>
-            <div>
-                <img src="images/project5/cookiegif1.gif" alt="banner" />
-            </div>
-            <div>
-                <img src="images/project5/cookie2.png" alt="banner" />
-            </div>
-            <div>
-                <img src="images/project5/cookie3.png" alt="banner" />
-            </div>
-            <div>
-                <img src="images/project5/background2.png" alt="banner" />
-            </div>
-
+        <p>This is the first finished game of the Video Game Design Club at my University! My role in the project was primarily to teach other members how to program in Unity, since I was one of the most experienced people in the club. I taught C#, the basics of Unity's framework, physics programming, state machines, and importing 2D assets. I did make some contributions fixing bugs, hooking up the UI, and making some of the sprites, but the focus was getting other members some experience and learning how to work as a team. For being a lot of people's first ever game, I think it came out really well!</p>
+        <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="finite: true">
+            <ul class="uk-slider-items uk-child-width-1-4@s uk-child-width-1-4@ uk-grid-small">
+                <li>
+                    <img src="images/project5/cookie1.png" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project5/cookiegif1.gif" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project5/cookie2.png" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project5/background2.png" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project5/cookie3.png" alt="banner" />
+                </li>
+            </ul>
+            <a class="uk-position-center-left uk-position-small" href uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small" href uk-slidenav-next uk-slider-item="next"></a>
         </div>
-
         <a class="uk-button-text uk-text-decoration-none" href="https://github.com/Video-Game-Design-Club/Team-2">
             <span uk-icon="icon: link">
             </span> Project Github </a>
+        <a class="uk-button-text uk-text-decoration-none" href="https://sac-game-design-club.itch.io/cookie-climber">
+            <span uk-icon="icon: link">
+            </span> Itch.io Page </a>
     </div>
 
-    <div class="uk-margin uk-card uk-card-secondary uk-card-body ">
+    <div id="wifi" class="uk-margin uk-card uk-card-secondary uk-card-body ">
         <h4>Wifi Website</h4>
         <p>My first university project was to make a website with a group, so we made one that monitors the wifi traffic of some popular campus buildings and estimates how good the signal will be. The goal was to help students find a good place to study. I made an Android App for it that used a REST API to pull data from the server, and then make helpful visualizations of that data for the user. This was my first serious Android development project, and I learned a lot about project structure and code organization as well as the Android framework itself.</p>
     </div>
 
-    <div class="uk-margin uk-card uk-card-secondary uk-card-body ">
+    <div id="solitaire" class="uk-margin uk-card uk-card-secondary uk-card-body ">
         <h4>Serial Solitaire</h4>
-        <p>I joined a game jam with a group, but the project fell apart a few days before the deadline. I was so dejected that this happened yet again, and decided to make my own entry for the jam in the last few days. This is the result! I made some of my own tweaks to classic solitaire that I think make the game more fun and interesting, and it turned out amazing! I did all of the Art and Programming by myself, and a friend captured the background for me.</p>
-        <div class="uk-grid-column-small uk-grid-row-small uk-child-width-1-3@s uk-text-center uk-margin-bottom" uk-grid>
-            <div>
-                <img src="images/project7/solitaire2.png" alt="banner" />
-            </div>
-            <div>
-                <img src="images/project7/solitairegif1.gif" alt="banner" />
-            </div>
-            <div>
-                <img src="images/project7/solitaire1.png" alt="banner" />
-            </div>
-            <div>
-                <img src="images/project7/solitaire3.png" alt="banner" />
-            </div>
-
+        <p>This was a last minute entry into a game jam with a cozy autumn theme. Since I had so little time, I decided to make my own solitaire variant! Technically it is very simple, just screen raycasts and object parenting. My inspiration for the design came from my frustration of dealing the King cards in normal solitaire. They don't stack with anything, so they can only be moved if there is an empty slot. I removed the King and just required each stack to have 2 Queens, and Queens can stack on top of each other. I also tried something new by adding a stack to the side that can hold 5 cards, but they can only be retrieved in the order they were put in. I'm very happy with how the design plays, it feels difficult but not too difficult, and the stack forces some fun strategy! Everytime I open it up again I get sucked in for an hour. I made the card designs as well as the board background myself, just using tileable textures and an image editor, and I think it looks quite good! This game taught me that it is much easier to make an actually good game when you manage scope properly.</p>
+        <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="finite: true">
+            <ul class="uk-slider-items uk-child-width-1-4@s uk-child-width-1-4@ uk-grid-small">
+                <li>
+                    <img src="images/project7/solitaire2.png" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project7/solitairegif1.gif" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project7/solitaire1.png" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project7/solitaire3.png" alt="banner" />
+                </li>
+            </ul>
+            <a class="uk-position-center-left uk-position-small" href uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small" href uk-slidenav-next uk-slider-item="next"></a>
         </div>
-
         <a class="uk-button-text uk-text-decoration-none" href="https://serialboxes.itch.io/serial-solitaire">
             <span uk-icon="icon: link">
             </span> Itch.io Page </a>
     </div>
 
-    <div class="uk-margin uk-card uk-card-secondary uk-card-body ">
+    <div id="blender" class="uk-margin uk-card uk-card-secondary uk-card-body ">
         <h4>3D Artwork Showcase</h4>
-        <p>Modelling in 3D is skill I only recently gained proficiency in, so I don't have as many examples of my work, but I wanted to showcase some of my better projects here together!</p>
-        <div class="uk-grid-column-small uk-grid-row-small uk-child-width-1-4@s uk-text-center uk-margin-bottom" uk-grid>
-            <div>
-                <img src="images/project9/blender1.png" alt="banner" />
-            </div>
-            <div>
-                <img src="images/project9/blender2.png" alt="banner" />
-            </div>
-            <div>
-                <img src="images/project9/blender7.png" alt="banner" />
-            </div>
-            <div>
-                <img src="images/project9/blender8.png" alt="banner" />
-            </div>
-            <div>
-                <img src="images/project9/blender3.png" alt="banner" />
-            </div>
-            <div>
-                <img src="images/project9/blender4.png" alt="banner" />
-            </div>
-            <div>
-                <img src="images/project9/blender5.png" alt="banner" />
-            </div>
-            <div>
-                <img src="images/project9/blender6.png" alt="banner" />
-            </div>
-            <div>
-                <img src="images/project9/blender9.png" alt="banner" />
-            </div>
-            <div>
-                <img src="images/project9/blender10.png" alt="banner" />
-            </div>
-            <div>
-                <img src="images/project9/blender11.png" alt="banner" />
-            </div>
-            <div>
-                <img src="images/project9/blender12.png" alt="banner" />
-            </div>
-
+        <p>I have been making 3D models for almost as long as I've been making games, but I only recently took the plunge and learned proper modelling techniques and topolgy. I thought I would put together some of my better models into a card here! In these projects I use modifiers (subdivision surface, solidify, project, mirror, etc.), UVs, Shader Nodes, Sculpting, Rigging, Volumes, Particle Systems, Curves, and more! I'm finally getting to the point where I feel I have enough knowledge to make anything I can think of. There is still much to learn and improve, and I'm excited to continue making 3D artwork in the future!</p>
+        <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="finite: true">
+            <ul class="uk-slider-items uk-child-width-1-4@s uk-child-width-1-4@ uk-grid-small">
+                <li>
+                    <img src="images/project9/blender1.png" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project9/blender2.png" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project9/blender7.png" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project9/blender8.png" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project9/blender3.png" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project9/blender4.png" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project9/blender5.png" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project9/blender6.png" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project9/blender9.png" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project9/blender10.png" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project9/blender11.png" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project9/blender12.png" alt="banner" />
+                </li>
+            </ul>
+            <a class="uk-position-center-left uk-position-small" href uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small" href uk-slidenav-next uk-slider-item="next"></a>
         </div>
     </div>
 
-    <div class="uk-margin uk-card uk-card-secondary uk-card-body ">
+    <div id="desert" class="uk-margin uk-card uk-card-secondary uk-card-body ">
         <h4>Desert Bus 3D</h4>
-        <p>I used to have a friend a while ago who loved the Desert Bus Charity Marathon, so I made a 3d version of the game for him! It has a fully procedural terrain system, with Perlin Noise, octaves, LOD and chunks. The textures are just triplanar mapped in a shader. This project taught me so much, it is where my skills in many advanced game development topics began.</p>
-        <div class="uk-grid-column-small uk-grid-row-small uk-child-width-1-4@s uk-text-center uk-margin-bottom" uk-grid>
-            <div>
-                <img src="images/project10/bus1.png" alt="banner" />
-            </div>
-            <div>
-                <img src="images/project10/bus2.png" alt="banner" />
-            </div>
-            <div>
-                <img src="images/project10/bus3.png" alt="banner" />
-            </div>
-            <div>
-                <img src="images/project10/bus4.png" alt="banner" />
-            </div>
-
+        <p>I used to have a friend a while ago who loved the Desert Bus Charity Marathon, so I made a 3d version of the game for him! It has a fully procedural terrain system based on heightmaps. It generates heightmap textures with a few octaves of Perlin Noise. The system also uses chunks with varying levels of detail to make far render distances possible! The terrain textures are just triplanar mapped in a shader. This project taught me so much, it is where my skills in many advanced game development topics began.</p>
+        <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="finite: true">
+            <ul class="uk-slider-items uk-child-width-1-4@s uk-child-width-1-4@ uk-grid-small">
+                <li>
+                    <img src="images/project10/bus1.png" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project10/bus2.png" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project10/bus3.png" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project10/bus4.png" alt="banner" />
+                </li>
+            </ul>
+            <a class="uk-position-center-left uk-position-small" href uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small" href uk-slidenav-next uk-slider-item="next"></a>
         </div>
     </div>
 
-    <div class="uk-margin uk-card uk-card-secondary uk-card-body ">
+    <div id="graphs" class="uk-margin uk-card uk-card-secondary uk-card-body ">
         <h4>Unity Graphing Library</h4>
-        <p>Recently I wanted to make some 3D charts. I looked for a good free asset in Unity to do this, but I couldn't find any, so I just made my own! It can take in a csv file, parse it, and then display the results with many options to the user. Drag and Zoom are also both supported. Each data point is converted into a position within the chart's volume in a compute shader, and rendered as a 3D sphere with GPU instancing. I had over 20 charts, each with hundreds or thousands of points being rendered, and still had no performance issues. This was a niche one but I still think its cool.</p>
-        <div class="uk-grid-column-small uk-grid-row-small uk-child-width-1-3@s uk-text-center uk-margin-bottom" uk-grid>
-            <div>
-                <img src="images/project11/graph1.png" alt="banner" />
-            </div>
-            <div>
-                <img src="images/project11/lookatthisgraph.gif" alt="banner" />
-            </div>
-            <div>
-                <img src="images/project11/graph2.png" alt="banner" />
-            </div>
-
+        <p>Recently I wanted to make some 3D charts. I looked for a good free asset in Unity to do this, but I couldn't find any, so I just made my own! It can take in a csv file, parse it, and then display the results with many options to the user. Drag and Zoom are also both supported. Each data point is converted into a position within the chart's volume in a compute shader, and rendered as a 3D sphere with GPU instancing. I had over 20 charts, each with hundreds or thousands of points being rendered, and still had no performance issues. I am very proud of how this ended up coming out!</p>
+        <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="finite: true">
+            <ul class="uk-slider-items uk-child-width-1-4@s uk-child-width-1-4@ uk-grid-small">
+                <li>
+                    <img src="images/project11/graph1.png" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project11/lookatthisgraph.gif" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project11/graph2.png" alt="banner" />
+                </li>
+            </ul>
+            <a class="uk-position-center-left uk-position-small" href uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small" href uk-slidenav-next uk-slider-item="next"></a>
         </div>
     </div>
 
-    <div class="uk-margin uk-card uk-card-secondary uk-card-body ">
+    <div id="life" class="uk-margin uk-card uk-card-secondary uk-card-body ">
         <h4>3D Game of Life</h4>
         <p>This was one of my very first Unity projects! It allows you to build and save any initial conditions for a simulation you like. You can also change the rules for the simulation along the top (Green for create, Yellow for Survive, Red for Death) for any number of neighbors. In addition to teaching me the basics of Unity, I also learned how to serialize data, write it to disk, and read it back later. </p>
-        <div class="uk-grid-column-small uk-grid-row-small uk-child-width-1-3@s uk-text-center uk-margin-bottom" uk-grid>
-            <div>
-                <img src="images/project12/lifegif.gif" alt="banner" />
-            </div>
-            <div>
-                <img src="images/project12/life1.png" alt="banner" />
-            </div>
-            <div>
-                <img src="images/project12/life2.png" alt="banner" />
-            </div>
-
+        <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="finite: true">
+            <ul class="uk-slider-items uk-child-width-1-4@s uk-child-width-1-4@ uk-grid-small">
+                <li>
+                    <img src="images/project12/lifegif.gif" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project12/life1.png" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project12/life2.png" alt="banner" />
+                </li>
+            </ul>
+            <a class="uk-position-center-left uk-position-small" href uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small" href uk-slidenav-next uk-slider-item="next"></a>
         </div>
     </div>
 
@@ -330,7 +394,7 @@
 <!-- About Me -->
 <section id="about" class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-small-bottom">
 <h3 class="uk-margin-xlarge-left uk-light">About Me</h3>
-<p class="uk-margin-xlarge-left uk-margin-xlarge-right">My name is Roxanne, but I go by Roxy. I am an aspiring developer and game designer! Creativity has been a strong driving force my entire life, I have been making things since I was a child. I taught myself programming to make a small Unity game when I was in middle school, and I have been coding ever since. I have worked on many projects of many types since then, and I've learned something from each. This has given me years of experience problem solving and coding. Many times I worked with others, and I learned how to effectively communicate and work as a team. I am currently a senior at the University of California Sacramento, and will be graduating this May. <br> <br> I have learned many technical skills, both in school and on my own. I am a proficient programmer in C, C++, C#, Java, and Phython, with some knowledge of JS and Kotlin. I am familiar with common data structures and some strategies for code organization. Most of my experience is in the Unity game engine, but I know the basics of Unreal Engine and Godot. I know how to interact with with Unity's Physics, UI, Sound, and Rendering Systems/Pipelines. I have also used Android Studio, Intellij, VS Code, and Rider. I can write shaders in HLSL and GLSL. I'm familiar with many shader types, realtime VFX techniques, and the basics of GPU architecture. I can also write compute shaders. For 3D artwork, I use Blender and a bit of Substance Painter. I'm familiar with modelling for low-poly and subdivision surface workflows. I know UV Wrapping, Materials, Shader Nodes, and Lighting as well. I am always eager to learn more about advanced programming techniques on both the CPU and GPU!</p>
+<p class="uk-margin-xlarge-left uk-margin-xlarge-right">My name is Roxanne, but I go by Roxy. I am an aspiring developer and game designer! Creativity has been a strong driving force my entire life, I have been making things since I was a child. I taught myself programming to make a small Unity game when I was in middle school, and I have been coding ever since. I have worked on many projects of many types since then, and I've learned something from each. This has given me years of experience problem solving and coding. Many times I worked with others, and I learned how to effectively communicate and work as a team. I am currently a senior at the University of California Sacramento, and will be graduating May 2024. <br> <br> I have learned many technical skills, both in school and on my own. I am a proficient programmer in C, C++, C#, Java, and Phython, with some knowledge of JS and Kotlin. I am familiar with common data structures and some strategies for code organization. Most of my experience is in the Unity game engine, but I know the basics of Unreal Engine and Godot. I know how to interact with with Unity's Physics, UI, Sound, and Rendering Systems/Pipelines. I have also used Android Studio, Intellij, VS Code, and Rider. I can write shaders in HLSL and GLSL. I'm familiar with many shader types, realtime VFX techniques, and the basics of GPU architecture. I can also write compute shaders. For 3D artwork, I use Blender and a bit of Substance Painter. I'm familiar with modelling for low-poly and subdivision surface workflows. I know UV Wrapping, Materials, Shader Nodes, and Lighting as well. I am always eager to learn more about advanced programming techniques on both the CPU and GPU!</p>
 
 <!-- About Me Ends -->
 
