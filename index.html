@@ -119,7 +119,7 @@
 
     <div id="rowland" class="uk-margin uk-card uk-card-secondary uk-card-body ">
         <h4>Rowland's Adventure</h4>
-        <p>This was my entry for a 2 day game jam about controlling gravity, mostly inspired by Super Mario Galaxy. The gravity effect was accomplished by detecting planets with large triggers, and then determining the direction of gravity with a specialized function that accounts for the player's relative position and the shape of the planet. I wanted to avoid the raycast method, it has proven itself janky to me in the past. I modelled the character myself in Blender and animated it procedurally in C#. This way my first attempt at designing a level with a silent tutorial and a gradual difficulty progression. Playtests showed it wasn't quite effective, and unfortunately I ran out of time to fix it. I learned that if you wish to communicate to the player without words, you must use precise colors and symbols as your language instead.</p>
+        <p>This was my entry for a 2 day game jam about controlling gravity, mostly inspired by Super Mario Galaxy. The gravity effect was accomplished by detecting planets with large triggers, and then determining the direction of gravity with a specialized function that accounts for the player's relative position and the shape of the planet. I wanted to avoid the raycast method, as it has proven itself quite janky in the past. I modelled the character myself in Blender and animated it procedurally in C#. This way my first attempt at designing a level with a silent tutorial and a gradual difficulty progression. Playtests showed it wasn't quite effective, and unfortunately I ran out of time to fix it. I learned that if you wish to communicate to the player without words, you must use precise colors and symbols as your language instead.</p>
         <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="finite: true">
             <ul class="uk-slider-items uk-child-width-1-4@s uk-child-width-1-4@ uk-grid-small">
                 <li>
@@ -153,6 +153,19 @@
         <h4>Soft Reminder</h4>
         <p>I needed a periodic, soft and silent reminder for therapy work, but I could not find any apps that allowed this, so I made one myself! This is a simple Android app that runs a custom vibration pattern at a user defined rate. An app must have a foreground process to use the vibration motor, so I had to start up a foreground service from the background repeatedly. I used Android's Alarm Scheduler API, since precise timing was important to me. This approach is suprisingly kind to battery life, probably because my foreground service is so simple. The UI was made in Jetpack Compose, which might be the best UI framework ever concieved I love it.</p>
 
+        <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="finite: true">
+            <ul class="uk-slider-items uk-child-width-1-4@s uk-child-width-1-4@ uk-grid-small">
+                <li>
+                    <img src="images/project2/reminder1.png" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project2/reminder2.png" alt="banner" />
+                </li>
+            </ul>
+            <a class="uk-position-center-left uk-position-small" href uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small" href uk-slidenav-next uk-slider-item="next"></a>
+        </div>
+        <!--
         <div class="uk-child-width-expand uk-grid-small uk-text-center" uk-grid>
             <div class="uk-width-1-4@s uk-width-1-4@">
                 <img src="images/project2/reminder1.png" alt="banner" />
@@ -164,6 +177,7 @@
                 <img src="images/project2/reminder3.png" alt="banner" />
             </div>
         </div>
+        -->
     </div>
 
     <div id="bookstore" class="uk-margin uk-card uk-card-secondary uk-card-body ">
@@ -178,10 +192,10 @@
                     <img src="images/project3/bookstoregif1.gif" alt="banner" />
                 </li>
                 <li>
-                    <img src="images/project3/bookstoregif3.gif" alt="banner" />
+                    <img src="images/project3/bookstoregif2.gif" alt="banner" />
                 </li>
                 <li>
-                    <img src="images/project3/bookstoregif2.gif" alt="banner" />
+                    <img src="images/project3/bookstoregif3.gif" alt="banner" />
                 </li>
                 <li>
                     <img src="images/project3/craig2.gif" alt="banner" />
@@ -205,6 +219,15 @@
     <div id="senior" class="uk-margin uk-card uk-card-secondary uk-card-body ">
         <h4>Senior Project</h4>
         <p>My senior project team is developing a custom dashboard display and onboard computer for the Engineering Department's experimental electric offroad racecar. It uses a Linux box that is running a custom OpenGL UI on a touch display, as well as logging telemetry from all the sensors on the vehicle. I am working on developing the backend, which manages all the running processes and facilitates data transfer between them. I have written scripts to create synthetic data streams to test logging, take live incoming data and write it to a CSV file, and recover files that may be corrupted if the system's power is unexpectedly cut.</p>
+        <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="finite: true">
+            <ul class="uk-slider-items uk-child-width-1-4@s uk-child-width-1-4@ uk-grid-small">
+                <li>
+                    <img src="images/project4/dataaaa.gif" alt="banner" />
+                </li>
+            </ul>
+            <a class="uk-position-center-left uk-position-small" href uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small" href uk-slidenav-next uk-slider-item="next"></a>
+        </div>
     </div>
 
     <div id="cookie" class="uk-margin uk-card uk-card-secondary uk-card-body ">
@@ -276,16 +299,16 @@
         <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="finite: true">
             <ul class="uk-slider-items uk-child-width-1-4@s uk-child-width-1-4@ uk-grid-small">
                 <li>
-                    <img src="images/project9/blender1.png" alt="banner" />
-                </li>
-                <li>
-                    <img src="images/project9/blender2.png" alt="banner" />
-                </li>
-                <li>
                     <img src="images/project9/blender7.png" alt="banner" />
                 </li>
                 <li>
                     <img src="images/project9/blender8.png" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project9/blender1.png" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project9/blender2.png" alt="banner" />
                 </li>
                 <li>
                     <img src="images/project9/blender3.png" alt="banner" />

@@ -4735,11 +4735,11 @@
 
     var searchNavbar = "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><circle fill=\"none\" stroke=\"#000\" stroke-width=\"1.1\" cx=\"10.5\" cy=\"10.5\" r=\"9.5\"/><line fill=\"none\" stroke=\"#000\" stroke-width=\"1.1\" x1=\"23\" y1=\"23\" x2=\"17\" y2=\"17\"/></svg>";
 
-    var slidenavNext = "<svg width=\"14\" height=\"24\" viewBox=\"0 0 14 24\" xmlns=\"http://www.w3.org/2000/svg\"><polyline fill=\"none\" stroke=\"#000\" stroke-width=\"1.4\" points=\"1.225,23 12.775,12 1.225,1 \"/></svg>";
+    var slidenavNext = "<svg width=\"28\" height=\"40\"  viewBox=\"-2 -2 32 44\" xmlns=\"http://www.w3.org/2000/svg\"><filter id=\"shadow\" y=\"-40%\" height=\"180%\" x=\"-40%\" width=\"180%\"><feDropShadow dx=\"0.5\" dy=\"0.5\" stdDeviation=\"1\" flood-color=\"black\" flood-opacity=\"1\"/> </filter><g filter=\"url(#shadow)\"><polyline fill=\"none\" stroke=\"#000\" stroke-width=\"3\" points=\"1.225,23 12.775,12 1.225,1 \"/></g></svg>";
 
-    var slidenavNextLarge = "<svg width=\"25\" height=\"40\" viewBox=\"0 0 25 40\" xmlns=\"http://www.w3.org/2000/svg\"><polyline fill=\"none\" stroke=\"#000\" stroke-width=\"2\" points=\"4.002,38.547 22.527,20.024 4,1.5 \"/></svg>";
+    var slidenavNextLarge = "<svg width=\"25\" height=\"40\" viewBox=\"0 0 25 40\" xmlns=\"http://www.w3.org/2000/svg\"><polyline fill=\"none\" stroke=\"#000\" stroke-width=\"4\" points=\"4.002,38.547 22.527,20.024 4,1.5 \"/></svg>";
 
-    var slidenavPrevious = "<svg width=\"14\" height=\"24\" viewBox=\"0 0 14 24\" xmlns=\"http://www.w3.org/2000/svg\"><polyline fill=\"none\" stroke=\"#000\" stroke-width=\"1.4\" points=\"12.775,1 1.225,12 12.775,23 \"/></svg>";
+    var slidenavPrevious = "<svg width=\"28\" height=\"40\" viewBox=\"-2 -2 32 44\" xmlns=\"http://www.w3.org/2000/svg\"><filter id=\"shadow\" y=\"-40%\" height=\"180%\" x=\"-40%\" width=\"180%\"><feDropShadow dx=\"0.5\" dy=\"0.5\" stdDeviation=\"1\" flood-color=\"black\" flood-opacity=\"1\"/> </filter><g filter=\"url(#shadow)\"><polyline fill=\"none\" stroke=\"#000\" stroke-width=\"3\" points=\"12.775,1 1.225,12 12.775,23 \"/></g></svg>";
 
     var slidenavPreviousLarge = "<svg width=\"25\" height=\"40\" viewBox=\"0 0 25 40\" xmlns=\"http://www.w3.org/2000/svg\"><polyline fill=\"none\" stroke=\"#000\" stroke-width=\"2\" points=\"20.527,1.5 2,20.024 20.525,38.547 \"/></svg>";
 
