@@ -26,13 +26,14 @@
                 <div uk-dropdown="pos: bottom-center">
                     <ul class="uk-nav uk-dropdown-nav">
                         <li><a href="#rowland" uk-scroll="offset: 100">Rowland's Adventure</a></li>
-                        <li><a href="#reminder" uk-scroll="offset: 100">Soft Reminder App</a></li>
                         <li><a href="#bookstore" uk-scroll="offset: 100">Wooden Croaks Bookstore</a></li>
-                        <li><a href="#senior" uk-scroll="offset: 100">Senior Project</a></li>
+                        <li><a href="#reminder" uk-scroll="offset: 100">Soft Reminder App</a></li>
                         <li><a href="#cookie" uk-scroll="offset: 100">Cookie Climber</a></li>
-                        <li><a href="#wifi" uk-scroll="offset: 100">Wifi Website School Project</a></li>
                         <li><a href="#solitaire" uk-scroll="offset: 100">Serial Solitaire</a></li>
+                        <li><a href="#senior" uk-scroll="offset: 100">Senior Project</a></li>
                         <li><a href="#blender" uk-scroll="offset: 100">3D Artwork Showcase</a></li>
+                        <li><a href="#outline" uk-scroll="offset: 100">Jump Flood Outlines</a></li>
+                        <li><a href="#wifi" uk-scroll="offset: 100">Wifi Website School Project</a></li>
                         <li><a href="#desert" uk-scroll="offset: 100">Desert Bus 3D</a></li>
                         <li><a href="#graphs" uk-scroll="offset: 100">Unity 3D Graphing Library</a></li>
                         <li><a href="#life" uk-scroll="offset: 100">3D Game of Life</a></li>
@@ -73,13 +74,14 @@
                     <ul class="uk-nav uk-dropdown-nav">
                         <li><a href="#projects" uk-scroll="offset: 100">Projects</a></li>
                         <li><a href="#rowland" uk-scroll="offset: 100">Rowland's Adventure</a></li>
-                        <li><a href="#reminder" uk-scroll="offset: 100">Soft Reminder App</a></li>
                         <li><a href="#bookstore" uk-scroll="offset: 100">Wooden Croaks Bookstore</a></li>
-                        <li><a href="#senior" uk-scroll="offset: 100">Senior Project</a></li>
+                        <li><a href="#reminder" uk-scroll="offset: 100">Soft Reminder App</a></li>
                         <li><a href="#cookie" uk-scroll="offset: 100">Cookie Climber</a></li>
-                        <li><a href="#wifi" uk-scroll="offset: 100">Wifi Website School Project</a></li>
                         <li><a href="#solitaire" uk-scroll="offset: 100">Serial Solitaire</a></li>
+                        <li><a href="#senior" uk-scroll="offset: 100">Senior Project</a></li>
                         <li><a href="#blender" uk-scroll="offset: 100">3D Artwork Showcase</a></li>
+                        <li><a href="#outline" uk-scroll="offset: 100">Jump Flood Outlines</a></li>
+                        <li><a href="#wifi" uk-scroll="offset: 100">Wifi Website School Project</a></li>
                         <li><a href="#desert" uk-scroll="offset: 100">Desert Bus 3D</a></li>
                         <li><a href="#graphs" uk-scroll="offset: 100">Unity 3D Graphing Library</a></li>
                         <li><a href="#life" uk-scroll="offset: 100">3D Game of Life</a></li>
@@ -149,37 +151,6 @@
             </span> Itch.io Page </a>
     </div>
 
-    <div id="reminder" class="uk-margin uk-card uk-card-secondary uk-card-body ">
-        <h4>Soft Reminder</h4>
-        <p>I needed a periodic, soft and silent reminder for therapy work, but I could not find any apps that allowed this, so I made one myself! This is a simple Android app that runs a custom vibration pattern at a user defined rate. An app must have a foreground process to use the vibration motor, so I had to start up a foreground service from the background repeatedly. I used Android's Alarm Scheduler API, since precise timing was important to me. This approach is suprisingly kind to battery life, probably because my foreground service is so simple. The UI was made in Jetpack Compose, which might be the best UI framework ever concieved I love it.</p>
-
-        <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="finite: true">
-            <ul class="uk-slider-items uk-child-width-1-4@s uk-child-width-1-4@ uk-grid-small">
-                <li>
-                    <img src="images/project2/reminder1.png" alt="banner" />
-                </li>
-                <li>
-                    <img src="images/project2/reminder2.png" alt="banner" />
-                </li>
-            </ul>
-            <a class="uk-position-center-left uk-position-small" href uk-slidenav-previous uk-slider-item="previous"></a>
-            <a class="uk-position-center-right uk-position-small" href uk-slidenav-next uk-slider-item="next"></a>
-        </div>
-        <!--
-        <div class="uk-child-width-expand uk-grid-small uk-text-center" uk-grid>
-            <div class="uk-width-1-4@s uk-width-1-4@">
-                <img src="images/project2/reminder1.png" alt="banner" />
-            </div>
-            <div class="uk-width-1-4@s uk-width-1-4@">
-                <img src="images/project2/reminder2.png" alt="banner" />
-            </div>
-            <div>
-                <img src="images/project2/reminder3.png" alt="banner" />
-            </div>
-        </div>
-        -->
-    </div>
-
     <div id="bookstore" class="uk-margin uk-card uk-card-secondary uk-card-body ">
         <h4>Wooden Croaks Bookstore</h4>
         <p>This game was a group project was a fantastical take on the game Unpacking, where you run a bookstore in a magic forest. I ended up doing a lot of work on the project. I programmed the holding and placing prop mechanics, which work by defining a grid in world space, and snapping objects to that grid based on how many squares their footprint occupies. I made an outline shader effect, which is a Scriptable Renderer Feature in Unity's URP that renders all the object silhouettes to a render texture with a different color. It then runs an edge detection pass over the color, depth, and normal buffers to detect edges, and blits the black outline pixels back to the camera's color buffer. It looks good but is finicky to calibrate, and I have since moved on to outline effects with manually defined edges. I also made grass that uses GPU instancing to draw a large number of blades at very high speeds, and then animate each blade in a vertex shader that offsets the blade tips depending on a wind texture that I generate procedurally in a compute shader. </p>
@@ -216,18 +187,35 @@
         
     </div>
 
-    <div id="senior" class="uk-margin uk-card uk-card-secondary uk-card-body ">
-        <h4>Senior Project</h4>
-        <p>My senior project team is developing a custom dashboard display and onboard computer for the Engineering Department's experimental electric offroad racecar. It uses a Linux box that is running a custom OpenGL UI on a touch display, as well as logging telemetry from all the sensors on the vehicle. I am working on developing the backend, which manages all the running processes and facilitates data transfer between them. I have written scripts to create synthetic data streams to test logging, take live incoming data and write it to a CSV file, and recover files that may be corrupted if the system's power is unexpectedly cut.</p>
+    <div id="reminder" class="uk-margin uk-card uk-card-secondary uk-card-body ">
+        <h4>Soft Reminder</h4>
+        <p>I needed a periodic, soft and silent reminder for therapy work, but I could not find any apps that allowed this, so I made one myself! This is a simple Android app that runs a custom vibration pattern at a user defined rate. An app must have a foreground process to use the vibration motor, so I had to start up a foreground service from the background repeatedly. I used Android's Alarm Scheduler API, since precise timing was important to me. This approach is suprisingly kind to battery life, probably because my foreground service is so simple. The UI was made in Jetpack Compose, which might be the best UI framework ever concieved I love it.</p>
+
         <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="finite: true">
             <ul class="uk-slider-items uk-child-width-1-4@s uk-child-width-1-4@ uk-grid-small">
                 <li>
-                    <img src="images/project4/dataaaa.gif" alt="banner" />
+                    <img src="images/project2/reminder1.png" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project2/reminder2.png" alt="banner" />
                 </li>
             </ul>
             <a class="uk-position-center-left uk-position-small" href uk-slidenav-previous uk-slider-item="previous"></a>
             <a class="uk-position-center-right uk-position-small" href uk-slidenav-next uk-slider-item="next"></a>
         </div>
+        <!--
+        <div class="uk-child-width-expand uk-grid-small uk-text-center" uk-grid>
+            <div class="uk-width-1-4@s uk-width-1-4@">
+                <img src="images/project2/reminder1.png" alt="banner" />
+            </div>
+            <div class="uk-width-1-4@s uk-width-1-4@">
+                <img src="images/project2/reminder2.png" alt="banner" />
+            </div>
+            <div>
+                <img src="images/project2/reminder3.png" alt="banner" />
+            </div>
+        </div>
+        -->
     </div>
 
     <div id="cookie" class="uk-margin uk-card uk-card-secondary uk-card-body ">
@@ -262,11 +250,6 @@
             </span> Itch.io Page </a>
     </div>
 
-    <div id="wifi" class="uk-margin uk-card uk-card-secondary uk-card-body ">
-        <h4>Wifi Website</h4>
-        <p>My first university project was to make a website with a group, so we made one that monitors the wifi traffic of some popular campus buildings and estimates how good the signal will be. The goal was to help students find a good place to study. I made an Android App for it that used a REST API to pull data from the server, and then make helpful visualizations of that data for the user. This was my first serious Android development project, and I learned a lot about project structure and code organization as well as the Android framework itself.</p>
-    </div>
-
     <div id="solitaire" class="uk-margin uk-card uk-card-secondary uk-card-body ">
         <h4>Serial Solitaire</h4>
         <p>This was a last minute entry into a game jam with a cozy autumn theme. Since I had so little time, I decided to make my own solitaire variant! Technically it is very simple, just screen raycasts and object parenting. My inspiration for the design came from my frustration of dealing the King cards in normal solitaire. They don't stack with anything, so they can only be moved if there is an empty slot. I removed the King and just required each stack to have 2 Queens, and Queens can stack on top of each other. I also tried something new by adding a stack to the side that can hold 5 cards, but they can only be retrieved in the order they were put in. I'm very happy with how the design plays, it feels difficult but not too difficult, and the stack forces some fun strategy! Everytime I open it up again I get sucked in for an hour. I made the card designs as well as the board background myself, just using tileable textures and an image editor, and I think it looks quite good! This game taught me that it is much easier to make an actually good game when you manage scope properly.</p>
@@ -293,6 +276,20 @@
             </span> Itch.io Page </a>
     </div>
 
+    <div id="senior" class="uk-margin uk-card uk-card-secondary uk-card-body ">
+        <h4>Senior Project</h4>
+        <p>My senior project team is developing a custom dashboard display and onboard computer for the Engineering Department's experimental electric offroad racecar. It uses a Linux box that is running a custom OpenGL UI on a touch display, as well as logging telemetry from all the sensors on the vehicle. I am working on developing the backend, which manages all the running processes and facilitates data transfer between them. I have written scripts to create synthetic data streams to test logging, take live incoming data and write it to a CSV file, and recover files that may be corrupted if the system's power is unexpectedly cut.</p>
+        <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="finite: true">
+            <ul class="uk-slider-items uk-child-width-1-4@s uk-child-width-1-4@ uk-grid-small">
+                <li>
+                    <img src="images/project4/dataaaa.gif" alt="banner" />
+                </li>
+            </ul>
+            <a class="uk-position-center-left uk-position-small" href uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small" href uk-slidenav-next uk-slider-item="next"></a>
+        </div>
+    </div>
+
     <div id="blender" class="uk-margin uk-card uk-card-secondary uk-card-body ">
         <h4>3D Artwork Showcase</h4>
         <p>I have been making 3D models for almost as long as I've been making games, but I only recently took the plunge and learned proper modelling techniques and topolgy. I thought I would put together some of my better models into a card here! In these projects I use modifiers (subdivision surface, solidify, project, mirror, etc.), UVs, Shader Nodes, Sculpting, Rigging, Volumes, Particle Systems, Curves, and more! I'm finally getting to the point where I feel I have enough knowledge to make anything I can think of. There is still much to learn and improve, and I'm excited to continue making 3D artwork in the future!</p>
@@ -303,6 +300,18 @@
                 </li>
                 <li>
                     <img src="images/project9/blender8.png" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project9/blender14.png" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project9/blender13.png" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project9/blender15.png" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project9/blender16.png" alt="banner" />
                 </li>
                 <li>
                     <img src="images/project9/blender1.png" alt="banner" />
@@ -326,9 +335,6 @@
                     <img src="images/project9/blender9.png" alt="banner" />
                 </li>
                 <li>
-                    <img src="images/project9/blender10.png" alt="banner" />
-                </li>
-                <li>
                     <img src="images/project9/blender11.png" alt="banner" />
                 </li>
                 <li>
@@ -338,6 +344,31 @@
             <a class="uk-position-center-left uk-position-small" href uk-slidenav-previous uk-slider-item="previous"></a>
             <a class="uk-position-center-right uk-position-small" href uk-slidenav-next uk-slider-item="next"></a>
         </div>
+    </div>
+
+    <div id="outline" class="uk-margin uk-card uk-card-secondary uk-card-body ">
+        <h4>Jump Flood Outlines</h4>
+        <p>This is a fullscreen outline effect implemented in Unity's Universal Render Pipeline as a Scriptable Renderer Feature. It is based on <a class="uk-button-text uk-text-decoration-none" href="https://bgolus.medium.com/the-quest-for-very-wide-outlines-ba82ed442cd9" target="_blank">this</a> amazing article by Ben Golus. He explains how the Jump Flood algorithm can be used to generate a distance field to any seed pixels in real time. This is much more performant and allows for much wider outlines than standard edge detection approaches. I implemented the algorithm into the URP, and made some changes. I added weights to the distance field calculation to allow for outlines of varying widths, and made it possible to define internal outlines on objects by rendering them with a special texture that is completely decoupled from the object's normal texture. These changes give complete artist control to how the object outlines are detected and rendered. After many attempts, this is the best outline shader I have written by far, I am very proud of it!</p> 
+        <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="finite: true">
+            <ul class="uk-slider-items uk-child-width-1-4@s uk-child-width-1-4@ uk-grid-small">
+                <li>
+                    <img src="images/project13/outlines1.gif" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project13/outlines2.gif" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project13/outlines3.png" alt="banner" />
+                </li>
+            </ul>
+            <a class="uk-position-center-left uk-position-small" href uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small" href uk-slidenav-next uk-slider-item="next"></a>
+        </div>
+    </div>
+
+    <div id="wifi" class="uk-margin uk-card uk-card-secondary uk-card-body ">
+        <h4>Wifi Website</h4>
+        <p>My first university project was to make a website with a group, so we made one that monitors the wifi traffic of some popular campus buildings and estimates how good the signal will be. The goal was to help students find a good place to study. I made an Android App for it that used a REST API to pull data from the server, and then make helpful visualizations of that data for the user. This was my first serious Android development project, and I learned a lot about project structure and code organization as well as the Android framework itself.</p>
     </div>
 
     <div id="desert" class="uk-margin uk-card uk-card-secondary uk-card-body ">
@@ -438,7 +469,7 @@
                 </span> /noodlemanifold </a>
         </div>
         <div class="uk-margin-xlarge-left uk-margin-small-top">
-            <a class="uk-button-text uk-text-decoration-none" href="bla">
+            <a class="uk-button-text uk-text-decoration-none" href="https://www.linkedin.com/in/roxanne-campbell-39829b2bb/">
                 <span uk-icon="icon: linkedin">
                 </span> Roxanne Campbell </a>
         </div>
