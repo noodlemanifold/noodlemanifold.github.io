@@ -119,13 +119,13 @@
 
     <div id="outline" class="uk-margin uk-card uk-card-secondary uk-card-body ">
         <h4>Jump Flood Outlines</h4>
-        <p>        This is a post processing outline effect implemented in Unity's Universal Render Pipeline as a Scriptable Renderer 
+        <p>      This is a post processing outline effect implemented in Unity's Universal Render Pipeline as a Scriptable Renderer 
             Feature. It is based on 
             <a class="uk-button-text uk-text-decoration-none" href="https://bgolus.medium.com/the-quest-for-very-wide-outlines-ba82ed442cd9" target="_blank">this</a> 
             amazing article on the Jump Flood Algorithm by Ben Golus. The shader generates a realtime distance field to 
             the boundaries of objects or textured lines and uses that to draw outlines of any width.
         </p> 
-        <p>        In the past, I have made outline shaders that work by detecting edges in the depth buffer and surface 
+        <p>      In the past, I have made outline shaders that work by detecting edges in the depth buffer and surface 
             normals, but I found them incredibly finicky and frustrating to tune properly. The goal with this project was 
             to make an outline shader that is performant and allows for full artist control of outline placement and width.
             The first step is to render all objects in the "Outline" light layer to a silhouette buffer. They are rendered
@@ -139,7 +139,7 @@
             objects more legible.
         </p> 
         <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="finite: true">
-            <ul class="uk-slider-items uk-grid-small uk-child-width-1-3@s uk-child-width-1-3" uk-grid uk-lightbox>
+            <ul class="uk-slider-items uk-grid-small uk-child-width-1-1@s uk-child-width-1-3" uk-grid uk-lightbox>
                 <li>
                     <a class="uk-inline" href="images/portfolioOutlines/outlines1.gif" data-caption="Very Large Outlines are Possible in Real Time">
                         <img src="images/portfolioOutlines/outlines1.gif" alt="Very Large Outlines are Possible in Real Time" height="200"/>
