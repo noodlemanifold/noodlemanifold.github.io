@@ -173,12 +173,12 @@
 
     <div id="grass" class="uk-margin uk-card uk-card-secondary uk-card-body ">
         <h4>GPU Instanced Grass</h4>
-        <p>        I saw a GDC talk on making grass with instanced geometry, and wanted to give it a go myself.
+        <p>      I saw a GDC talk on making grass with instanced geometry, and wanted to give it a go myself.
             This effect uses GPU instanced grass blades positioned in a compute shader. It also calculates a 
             wind texture in real time from stacked sine waves in another compute shader to animate every individual 
             grass blade.
         </p> 
-        <p>        When the project is first run, or whenever the grass object changes, the grass initialization compute 
+        <p>      When the project is first run, or whenever the grass object changes, the grass initialization compute 
             shader is executed. It fills a Compute Buffer with Grass objects that contain information about the world position,
             wind uv coordinates, and size for each blade of grass. Every frame, a separate compute shader is executed to generate 
             a wind noise texture. This is done using sine waves stacked at different frequencies to model large gusts of wind 
@@ -191,7 +191,7 @@
             between a tip color, blade color, and base color, and multiplies that by a simple Lambertian Diffuse factor.
         </p> 
         <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="finite: true">
-            <ul class="uk-slider-items uk-grid-small uk-child-width-1-3@s uk-child-width-1-3" uk-grid uk-lightbox>
+            <ul class="uk-slider-items uk-grid-small uk-child-width-1-1@s uk-child-width-1-3@" uk-lightbox>
                 <li>
                     <a class="uk-inline" href="images/portfolioGrass/grass1.gif" data-caption="Grass Scene GIF">
                         <img src="images/portfolioGrass/grass1.gif" alt="Grass Scene GIF" height="200"/>
@@ -215,11 +215,11 @@
 
     <div id="graphs" class="uk-margin uk-card uk-card-secondary uk-card-body ">
         <h4>Unity 3D Graphing Library</h4>
-        <p>        I could not find and 3D graphing tools for Unity, so I made my own. It uses compute shaders to calculate 
+        <p>      I could not find and 3D graphing tools for Unity, so I made my own. It uses compute shaders to calculate 
             the position of every point based on the panning and scaling of the graph view, and GPU instancing to render 
             each point in real time. The user can pan and zoom the chart with the mouse.
         </p>
-        <p>        At runtime, the library takes in an array of data points as floats for each data series the user wants
+        <p>      At runtime, the library takes in an array of data points as floats for each data series the user wants
             graphed. These are packed into a compute buffer and sent to the GPU. A compute shader is dispatched with a thread 
             for every point in the data set. Each thread creates a position for the data point at the correct position and 
             rotation inside the graph view. Once this is done, I call DrawInstanced() on the CPU, and draw one sphere for 
@@ -229,7 +229,7 @@
             only drawn if the graph view is inside the view frustrum.
         </p>
         <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="finite: true">
-            <ul class="uk-slider-items uk-grid-small uk-child-width-1-3@s uk-child-width-1-3" uk-grid uk-lightbox>
+            <ul class="uk-slider-items uk-grid-small uk-child-width-1-1@s uk-child-width-1-3@" uk-lightbox>
                 <li>
                     <a class="uk-inline" href="images/portfolioGraphs/lookatthisgraph.gif" data-caption="Demonstration of Graph Interaction">
                         <img src="images/portfolioGraphs/lookatthisgraph.gif" alt="Demonstration of Graph Interaction" height="200"/>
@@ -268,11 +268,11 @@
 
     <div id="ray_marching" class="uk-margin uk-card uk-card-secondary uk-card-body ">
         <h4>Ray Tracing from Scratch</h4>
-        <p>        While I had some experience, this was my first real project that taught me compute shaders. It renders a scene 
+        <p>      While I had some experience, this was my first real project that taught me compute shaders. It renders a scene 
             of randomly generated spheres of varying size, albedo, and specular. It does not use any Ray Tracing APIS or
             accelerators, everything is done purely through a compute shader.
         </p>
-        <p>        When the project is first run, it creates a buffer of 'Sphere' objects, and randomly assigns each object a 
+        <p>      When the project is first run, it creates a buffer of 'Sphere' objects, and randomly assigns each object a 
             radius, position, albedo, and specular value. Spheres that are intersecting are discared and re-rolled. This buffer is 
             shipped off to the GPU with a render texture for output. Every frame, the compute shader is executed with one thread 
             for every pixel on the screen. Each thread sends out a ray from the camera at its pixel's world location. The ray's 
@@ -283,7 +283,7 @@
             screen.
         </p> 
         <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="finite: true">
-            <ul class="uk-slider-items uk-grid-small uk-child-width-1-3@s uk-child-width-1-3" uk-grid uk-lightbox>
+            <ul class="uk-slider-items uk-grid-small uk-child-width-1-1@s uk-child-width-1-3@" uk-lightbox>
                 <li>
                     <a class="uk-inline" href="images/portfolioSpheres/raytracing1.gif" data-caption="Scene Fly Through">
                         <img src="images/portfolioSpheres/raytracing1.gif" alt="Scene Fly Through" height="200"/>
