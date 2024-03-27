@@ -1969,20 +1969,23 @@ select.uk-form-width-xsmall {
  * Primary
  */
 .uk-button-primary {
-  background-color: #1e87f0;
-  color: #fff;
-  border: 1px solid transparent;
+  background-color: #FAFAFA;
+  color: #ad6cdf;
+  border: 2px solid #ad6cdf;
+  border-radius: 5px;
 }
 /* Hover */
 .uk-button-primary:hover {
-  background-color: #0f7ae5;
-  color: #fff;
+  background-color: #FAFAFA;
+  color: #ad6cdf;
+  border-color: #c681fb;
 }
 /* OnClick + Active */
 .uk-button-primary:active,
 .uk-button-primary.uk-active {
-  background-color: #0e6dcd;
-  color: #fff;
+  background-color: #FAFAFA;
+  color: #ad6cdf;
+  border-color: #874db3;
 }
 /*
  * Secondary
@@ -7138,7 +7141,7 @@ ul.uk-nav-sub {
 /* Color modifiers
  ========================================================================== */
 .uk-text-muted {
-  color: #999 !important;
+  color: #FAFAFA !important;
 }
 .uk-text-emphasis {
   color: #333 !important;
@@ -11873,7 +11876,7 @@ iframe[data-uk-cover] {
 .uk-card-secondary > :not([class*='uk-card-media']) .uk-text-muted,
 .uk-overlay-primary .uk-text-muted,
 .uk-offcanvas-bar .uk-text-muted {
-  color: rgba(255, 255, 255, 0.5) !important;
+  color: rgba(250, 250, 250, 1.0);
 }
 .uk-light .uk-text-emphasis,
 .uk-section-primary:not(.uk-preserve-color) .uk-text-emphasis,
