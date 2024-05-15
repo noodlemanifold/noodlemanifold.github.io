@@ -31,7 +31,7 @@
                         <li><a href="#graphics" uk-scroll="offset: 100">Graphics Programming</a></li>
                         <li><a href="#outline" uk-scroll="offset: 100" class="uk-margin-small-left">Jump Flood Outlines</a></li>
                         <li><a href="#grass" uk-scroll="offset: 100" class="uk-margin-small-left">GPU Instanced Grass</a></li>
-                        <li><a href="#graphs" uk-scroll="offset: 100" class="uk-margin-small-left">Graphing Library</a></li>
+                        <li><a href="#shadows" uk-scroll="offset: 100" class="uk-margin-small-left">Shadow Volumes</a></li>
                         <li><a href="#ray_marching" uk-scroll="offset: 100" class="uk-margin-small-left">Ray Tracing from Scratch</a></li>
                         <!--
                         <li><a href="#development" uk-scroll="offset: 100">Game Development</a></li>
@@ -76,7 +76,7 @@
                         <li><a href="#graphics" uk-scroll="offset: 100">Graphics Programming</a></li>
                         <li><a href="#outline" uk-scroll="offset: 100" class="uk-margin-small-left">Jump Flood Outlines</a></li>
                         <li><a href="#grass" uk-scroll="offset: 100" class="uk-margin-small-left">GPU Instanced Grass</a></li>
-                        <li><a href="#graphs" uk-scroll="offset: 100" class="uk-margin-small-left">Graphing Library</a></li>
+                        <li><a href="#shadows" uk-scroll="offset: 100" class="uk-margin-small-left">Shadow Volumes</a></li>
                         <li><a href="#ray_marching" uk-scroll="offset: 100" class="uk-margin-small-left">Ray Tracing from Scratch</a></li>
                         <!--
                         <li><a href="#development" uk-scroll="offset: 100">Game Development</a></li>
@@ -212,7 +212,7 @@
             <a class="uk-position-center-right uk-position-small" href uk-slidenav-next uk-slider-item="next"></a>
         </div>
     </div>
-
+<!--
     <div id="graphs" class="uk-margin uk-card uk-card-secondary uk-card-body ">
         <h4>Unity 3D Graphing Library</h4>
         <p>    I could not find and 3D graphing tools for Unity, so I made my own. It uses compute shaders to calculate 
@@ -258,6 +258,62 @@
                 <li>
                     <a class="uk-inline" href="images/portfolioGraphs/graphs6.png" data-caption="Another Graph">
                         <img src="images/portfolioGraphs/graphs6.png" alt="Another Graph" height="200"/>
+                    </a>
+                </li>
+            </ul>
+            <a class="uk-position-center-left uk-position-small" href uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small" href uk-slidenav-next uk-slider-item="next"></a>
+        </div>
+    </div>
+-->
+    <div id="shadows" class="uk-margin uk-card uk-card-secondary uk-card-body ">
+        <h4>Direct OpenGL Shadow Volumes</h4>
+        <p>    In my game engine architecture class, we had to make our own game from scratch using a barebones Java and OpenGL game engine made
+            for the class. I wanted to take the opportunity to do something not easily done in standard game engines, and decided to
+            make procedural geometry shader based shadow volumes. All of the CPU and GPU code needed for this effect were made my me and added into the engine.
+        </p>
+        <p>    Before any shadows can be generated, there is some pre-processing necessary. In order to detect mesh silhouettes,
+            you must use the OpenGL TRIANGLES_ADJACENCY draw mode. The user has to calculate what the adjacent vertices are
+            themselves, which I did by looping over all the edges of the mesh and keeping a map of what vertices are opposite
+            which edges. The actual effect is done in 4 passes. First the scene is rendered just to the depth buffer with no
+            color. Second, a geometry shader generates the shadow volumes by extruding  out the silhouette edge of the mesh from
+            the light's perspective. A -1 is written to the stencil buffer for front faces, and a +1 for back faces. Crucially,
+            depth test is enabled, so scene geometry can occlude the shadow volumes. If the stencil buffer contains 0, either no
+            shadows are on screen, or both sides of the shadow volume are on screen, so there is no shadow. If the stencil contains
+            anything else, a front face of the volume was drawn, but the back face was occluded, which means there is an object in a shadow
+            volume at that pixel. Pixels that have a stencil buffer of zero are drawn with a light shader, and then pixels with any
+            other stencil buffer value are drawn with a shadow shader.
+        </p>
+        <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="finite: true">
+            <ul class="uk-slider-items uk-grid-small uk-child-width-1-3@s uk-child-width-1-3@" uk-lightbox>
+                <li>
+                    <a class="uk-inline" href="images/portfolioShadows/shadows1.png" data-caption="Shadow Volumes in a scene from a complex object">
+                        <img src="images/portfolioShadows/shadows1.png" alt="Shadow Volumes in a scene from a complex object" height="200"/>
+                    </a>
+                </li>
+                <li>
+                    <a class="uk-inline" href="images/portfolioShadows/shadows2.png" data-caption="Visualization of Generated Volumes">
+                        <img src="images/portfolioShadows/shadows2.png" alt="Visualization of Generated Volumes" height="200"/>
+                    </a>
+                </li>
+                <li>
+                    <a class="uk-inline" href="images/portfolioShadows/shadowsGif3.gif" data-caption="Shadow Volumes in use in a real time game">
+                        <img src="images/portfolioShadows/shadowsGif3.gif" alt="Shadow Volumes in use in a real time game" height="200"/>
+                    </a>
+                </li>
+                <li>
+                    <a class="uk-inline" href="images/portfolioShadows/shadowsGif.gif" data-caption="Animated Scene">
+                        <img src="images/portfolioShadows/shadowsGif.gif" alt="Animated Scene" height="200"/>
+                    </a>
+                </li>
+                <li>
+                    <a class="uk-inline" href="images/portfolioShadows/shadowsGif2.gif" data-caption="Use with Animated Character">
+                        <img src="images/portfolioShadows/shadowsGif2.gif" alt="Use with Animated Character" height="200"/>
+                    </a>
+                </li>
+                <li>
+                    <a class="uk-inline" href="images/portfolioShadows/shadows5.png" data-caption="Character Shadows">
+                        <img src="images/portfolioShadows/shadows5.png" alt="Character Shadows" height="200"/>
                     </a>
                 </li>
             </ul>
