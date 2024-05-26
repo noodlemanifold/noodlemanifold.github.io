@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/uikit.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <script src="js/uikit.js"></script>
+    <script src="js/uikit-icons.js"></script>
+
+    <title>Roxy's Portfolio</title>
+</head>
+<body>
+<!-- Navigation Bar -->
+<nav class="uk-navbar-container uk-visible@m " uk-navbar uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+    
+    <div class="uk-navbar-left">
+        <a href="#" class="uk-navbar-item uk-logo uk-margin-large-left">
+            <img src="images/logo2.png" alt="Very Large Outlines are Possible in Real Time" height="50" width="50"/>
+        </a>
+        <a href="" class="uk-navbar-item uk-logo uk-dark">Roxanne Campbell</a>
+    </div>
+    <div class="uk-navbar-right uk-margin-xlarge-right">
+
+        <ul class="uk-navbar-nav uk-dark">
+            <li><a class="uk-button-text uk-text-capitalize" href="programming.html">Home</a></li>
+            <li><a class="uk-button-text uk-text-capitalize" href="#projects"  uk-scroll="offset: 100">Projects</a>
+                <div uk-dropdown="pos: bottom-center">
+                    <ul class="uk-nav uk-dropdown-nav">
+                        <li><a href="#outline" uk-scroll="offset: 100">Jump Flood Outlines</a></li>
+                        <li><a href="#rowland" uk-scroll="offset: 100">Rowland's Adventure</a></li>
+                        <li><a href="#blender" uk-scroll="offset: 100">3D Artwork Showcase</a></li>
+                        <li><a href="#tracing" uk-scroll="offset: 100">Ray Tracing from Scratch</a></li>
+                        <li><a href="#graphs" uk-scroll="offset: 100">Graphing Library</a></li>
+                        <li><a href="#solitaire" uk-scroll="offset: 100">Serial Solitaire</a></li>
+                        <li><a href="#reminder" uk-scroll="offset: 100">Soft Reminder App</a></li>
+                        <li><a href="#cookie" uk-scroll="offset: 100">Cookie Climber</a></li>
+                        <li><a href="#desert" uk-scroll="offset: 100">Desert Bus 3D</a></li>
+                        <li><a href="#life" uk-scroll="offset: 100">3D Game of Life</a></li>
+                        <li><a href="#wifi" uk-scroll="offset: 100">Wifi Website School Project</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a class="uk-button-text uk-text-capitalize" href="programming.html#about">About</a></li>
+            <li><a class="uk-button-text uk-text-capitalize" href="programming.html#contact">Contact</a></li>
+
+        </ul>
+
+    </div>
+</nav>
+<!-- Navigation Bar Ends  -->
+
+<!-- Navigation Bar Mobile -->
+<nav class="uk-navbar-container uk-hidden@m " uk-navbar uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+    
+    <div class="uk-navbar-left uk-margin-small-left">
+        <a href="" class="uk-navbar-item uk-logo uk-dark">Roxanne Campbell</a>
+    </div>
+    <div class="uk-navbar-right uk-margin-xlarge-right">
+
+        <ul class="uk-navbar-nav uk-dark">
+            <li><button uk-toggle="target: #offcanvas-nav" type="button" uk-navbar-toggle-icon></button></li>
+
+        </ul>
+
+    </div>
+</nav>
+<div id="offcanvas-nav" uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+
+        <ul class="uk-nav uk-nav-primary">
+            <li><a class="uk-button-text uk-text-capitalize" href="programming.html">Home</a></li>
+            <li><a class="uk-button-text uk-text-capitalize">Projects</a>
+                <div uk-dropdown="shift: false; flip: false">
+                    <ul class="uk-nav uk-dropdown-nav">
+                        <li><a href="#outline" uk-scroll="offset: 100">Jump Flood Outlines</a></li>
+                        <li><a href="#rowland" uk-scroll="offset: 100">Rowland's Adventure</a></li>
+                        <li><a href="#blender" uk-scroll="offset: 100">3D Artwork Showcase</a></li>
+                        <li><a href="#tracing" uk-scroll="offset: 100">Ray Tracing from Scratch</a></li>
+                        <li><a href="#graphs" uk-scroll="offset: 100">Graphing Library</a></li>
+                        <li><a href="#solitaire" uk-scroll="offset: 100">Serial Solitaire</a></li>
+                        <li><a href="#reminder" uk-scroll="offset: 100">Soft Reminder App</a></li>
+                        <li><a href="#cookie" uk-scroll="offset: 100">Cookie Climber</a></li>
+                        <li><a href="#desert" uk-scroll="offset: 100">Desert Bus 3D</a></li>
+                        <li><a href="#life" uk-scroll="offset: 100">3D Game of Life</a></li>
+                        <li><a href="#wifi" uk-scroll="offset: 100">Wifi Website School Project</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a class="uk-button-text uk-text-capitalize" href="programming.html#about" >About</a></li>
+            <li><a class="uk-button-text uk-text-capitalize" href="programming.html#contact" >Contact</a></li>
+
+        </ul>
+
+
+
+
+    </div>
+</div>
+
+<!-- Navigation Bar Mobile Ends -->
+<!-- Home -->
+<section class="uk-margin-small-left uk-margin-small-right uk-margin-large-top">
+    <h1 class="uk-margin-xlarge-left uk-dark uk-text-left uk-margin-xlarge-right">Miscellaneous Projects</h1>
+    <p class="uk-margin-xlarge-left uk-dark uk-text-left uk-margin-xlarge-right">These are some of my other projects that show my history and experience with 3D and programming, but are not as relevant or aren't representative of my current abilities.</p>
+
+
+</section>
+
+<!-- Home Ends -->
+
+<!-- Projects Section -->
+<hr class="uk-margin-xlarge-left uk-margin-xlarge-right uk-margin-small-top">
+<section id="projects" class="uk-margin-small-left uk-margin-small-right ">
+
+<div class="uk-margin-xlarge-left uk-margin-xlarge-right uk-margin-large-top">
+
+    <div id="outline" class="uk-margin uk-card uk-card-secondary uk-card-body ">
+        <h4>Jump Flood Outlines</h4>
+        <p>    This is a post processing outline effect implemented in Unity's Universal Render Pipeline as a Scriptable Renderer 
+            Feature. It is based on 
+            <a class="uk-button-text uk-text-decoration-none" href="https://bgolus.medium.com/the-quest-for-very-wide-outlines-ba82ed442cd9" target="_blank">this</a> 
+            amazing article on the Jump Flood Algorithm by Ben Golus. The shader generates a realtime distance field to 
+            the boundaries of objects or textured lines and uses that to draw outlines of any width.
+        </p> 
+        <p>    In the past, I have made outline shaders that work by detecting edges in the depth buffer and surface 
+            normals, but I found them incredibly finicky and frustrating to tune properly. The goal with this project was 
+            to make an outline shader that is performant and allows for full artist control of outline placement and width.
+            The first step is to render all objects in the "Outline" light layer to a silhouette buffer. They are rendered
+            with a random per object value in the red buffer, and if present a special edge definition texture in the green 
+            and blue channels. The next pass prepares for the Jump Flood passes by detecting any place where the color in the 
+            red or green channels change, and returning only those pixels. The green channel texture is how I can define custom 
+            outlines. The Jump Flood algorithm is then run over several passes, which calculates the coordinate of the nearst
+            seed pixel. In the final composite pass, the shader returns an outline pixel 
+            if the value in the distance field is less than the outline width. The outline width limit is multipled 
+            by the value in the blue channel, which allows for artist defined outline width, and the depth buffer, to make distant
+            objects more legible.
+        </p> 
+        <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="finite: true">
+            <ul class="uk-slider-items uk-grid-small uk-child-width-1-3@s uk-child-width-1-3@" uk-lightbox>
+                <li>
+                    <a class="uk-inline" href="images/portfolioOutlines/outlines1.gif" data-caption="Very Large Outlines are Possible in Real Time">
+                        <img src="images/portfolioOutlines/outlines1.gif" alt="Very Large Outlines are Possible in Real Time" height="200"/>
+                    </a>
+                </li>
+                <li>
+                    <a class="uk-inline" href="images/portfolioOutlines/outlines5.png" data-caption="Example in Unity Sample Scene">
+                        <img src="images/portfolioOutlines/outlines5.png" alt="Example in Unity Sample Scene" height="200"/>
+                    </a>
+                </li>
+                <li>
+                    <a class="uk-inline" href="images/portfolioOutlines/outlines3.gif" data-caption="Step by Step Effect Breakdown">
+                        <img src="images/portfolioOutlines/outlines3.gif" alt="Step by Step Effect Breakdown" height="200"/>
+                    </a>
+                </li>
+                <li>
+                    <a class="uk-inline" href="images/portfolioOutlines/outlines2.gif" data-caption="Outline Test Scene Gif">
+                        <img src="images/portfolioOutlines/outlines2.gif" alt="Outline Test Scene Gif" height="200"/>
+                    </a>
+                </li>
+                <li>
+                    <a class="uk-inline" href="images/portfolioOutlines/outlines4.png" data-caption="Outline Test Scene">
+                        <img src="images/portfolioOutlines/outlines4.png" alt="Outline Test Scene" height="200"/>
+                    </a>
+                </li>
+            </ul>
+            <a class="uk-position-center-left uk-position-small" href uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small" href uk-slidenav-next uk-slider-item="next"></a>
+        </div>
+    </div>
+    
+    <div id="rowland" class="uk-margin uk-card uk-card-secondary uk-card-body ">
+        <h4>Rowland's Adventure</h4>
+        <p>This was my entry for a 2 day game jam about controlling gravity, mostly inspired by Super Mario Galaxy. The gravity effect was accomplished by detecting planets with large triggers, and then determining the direction of gravity with a specialized function that accounts for the player's relative position and the shape of the planet. I wanted to avoid the raycast method, as it has proven itself quite janky in the past. I modelled the character myself in Blender and animated it procedurally in C#. This way my first attempt at designing a level with a silent tutorial and a gradual difficulty progression. Playtests showed it wasn't quite effective, and unfortunately I ran out of time to fix it. I learned that if you wish to communicate to the player without words, you must use precise colors and symbols as your language instead.</p>
+        <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="finite: true">
+            <ul class="uk-slider-items uk-child-width-1-4@s uk-child-width-1-4@ uk-grid-small">
+                <li>
+                    <img src="images/project1/rowlandtitle.png" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project1/rowland.png" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project1/rowlandgif.gif" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project1/rowlandgif2.gif" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project1/rowland2.png" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project1/rowland3.png" alt="banner" />
+                </li>
+            </ul>
+            <a class="uk-position-center-left uk-position-small" href uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small" href uk-slidenav-next uk-slider-item="next"></a>
+        </div>
+        <a class="uk-button-text uk-text-decoration-none" href="https://serialboxes.itch.io/rowlands-adventure">
+            <span uk-icon="icon: link">
+            </span> Itch.io Page </a>
+    </div>
+
+    <div id="blender" class="uk-margin uk-card uk-card-secondary uk-card-body ">
+        <h4>3D Artwork Showcase</h4>
+        <p>I have been making 3D models for almost as long as I've been making games, but I only recently took the plunge and learned proper modeling techniques and topology. I thought I would put together some of my better models into a card here! In these projects I use modifiers (subdivision surface, solidify, project, mirror, etc.), UVs, Shader Nodes, Sculpting, Rigging, Volumes, Particle Systems, Curves, and more! I'm finally getting to the point where I feel I have enough knowledge to make anything I can think of. There is still much to learn and improve, and I'm excited to continue making 3D artwork in the future!</p>
+        <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="finite: true">
+            <ul class="uk-slider-items uk-child-width-1-4@s uk-child-width-1-4@ uk-grid-small">
+                <li>
+                    <img src="images/project9/blender7.png" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project9/blender8.png" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project9/blender14.png" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project9/blender13.png" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project9/blender15.png" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project9/blender16.png" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project9/blender1.png" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project9/blender2.png" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project9/blender3.png" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project9/blender4.png" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project9/blender5.png" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project9/blender6.png" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project9/blender9.png" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project9/blender11.png" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project9/blender12.png" alt="banner" />
+                </li>
+            </ul>
+            <a class="uk-position-center-left uk-position-small" href uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small" href uk-slidenav-next uk-slider-item="next"></a>
+        </div>
+    </div>
+
+    <div id="tracing" class="uk-margin uk-card uk-card-secondary uk-card-body ">
+        <h4>Ray Tracing from Scratch</h4>
+        <p>    While I had some experience, this was my first real project that taught me compute shaders. It renders a scene 
+            of randomly generated spheres of varying size, albedo, and specular. It does not use any Ray Tracing APIS or
+            accelerators, everything is done purely through a compute shader.
+        </p>
+        <p>    When the project is first run, it creates a buffer of 'Sphere' objects, and randomly assigns each object a 
+            radius, position, albedo, and specular value. Spheres that are intersecting are discared and re-rolled. This buffer is 
+            shipped off to the GPU with a render texture for output. Every frame, the compute shader is executed with one thread 
+            for every pixel on the screen. Each thread sends out a ray from the camera at its pixel's world location. The ray's 
+            intersection point with the ground plane and every sphere in the scene is calculated, and the closest one is chosen.
+            They ray is reflected off the intersecting surface based on the surface normal. It continues this calculation 
+            on loop until it runs out of energy or hits the skybox. The light contribution for every bounce is then added up and 
+            written to the render texture. Finally, a simple blit shader reads from the render texture and outputs the value to the 
+            screen.
+        </p> 
+        <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="finite: true">
+            <ul class="uk-slider-items uk-grid-small uk-child-width-1-3@s uk-child-width-1-3@" uk-lightbox>
+                <li>
+                    <a class="uk-inline" href="images/portfolioSpheres/raytracing1.gif" data-caption="Scene Fly Through">
+                        <img src="images/portfolioSpheres/raytracing1.gif" alt="Scene Fly Through" height="200"/>
+                    </a>
+                </li>
+                <li>
+                    <a class="uk-inline" href="images/portfolioSpheres/raytracing3.png" data-caption="View of a Typical Scene">
+                        <img src="images/portfolioSpheres/raytracing3.png" alt="View of a Typical Scene" height="200"/>
+                    </a>
+                </li>
+                <li>
+                    <a class="uk-inline" href="images/portfolioSpheres/raytracing2.png" data-caption="Deep Recursive Reflections">
+                        <img src="images/portfolioSpheres/raytracing2.png" alt="Deep Recursive Reflections" height="200"/>
+                    </a>
+                </li>
+                <li>
+                    <a class="uk-inline" href="images/portfolioSpheres/raytracing5.png" data-caption="Varying Levels of Specular Reflection">
+                        <img src="images/portfolioSpheres/raytracing5.png" alt="Varying Levels of Specular Reflection" height="200"/>
+                    </a>
+                </li>
+                <li>
+                    <a class="uk-inline" href="images/portfolioSpheres/raytracing4.png" data-caption="Proof there is no Geometry in the Scene!">
+                        <img src="images/portfolioSpheres/raytracing4.png" alt="Proof there is no Geometry in the Scene!" height="200"/>
+                    </a>
+                </li>
+            </ul>
+            <a class="uk-position-center-left uk-position-small" href uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small" href uk-slidenav-next uk-slider-item="next"></a>
+        </div>
+    </div>
+
+    <div id="graphs" class="uk-margin uk-card uk-card-secondary uk-card-body ">
+        <h4>Unity 3D Graphing Library</h4>
+        <p>    I could not find and 3D graphing tools for Unity, so I made my own. It uses compute shaders to calculate 
+            the position of every point based on the panning and scaling of the graph view, and GPU instancing to render 
+            each point in real time. The user can pan and zoom the chart with the mouse.
+        </p>
+        <p>    At runtime, the library takes in an array of data points as floats for each data series the user wants
+            graphed. These are packed into a compute buffer and sent to the GPU. A compute shader is dispatched with a thread 
+            for every point in the data set. Each thread creates a position for the data point at the correct position and 
+            rotation inside the graph view. Once this is done, I call DrawInstanced() on the CPU, and draw one sphere for 
+            every point. The point shader gets its position from the ComputeBuffer using its instance ID as the index, and 
+            offsets each sphere vertex in the vertex shader by that position. It also colors the point with a user-specified 
+            color sent from the CPU. The compute shader is only dispatched again if the user moves the chart, and the points are 
+            only drawn if the graph view is inside the view frustrum.
+        </p>
+        <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="finite: true">
+            <ul class="uk-slider-items uk-grid-small uk-child-width-1-3@s uk-child-width-1-3@" uk-lightbox>
+                <li>
+                    <a class="uk-inline" href="images/portfolioGraphs/lookatthisgraph.gif" data-caption="Demonstration of Graph Interaction">
+                        <img src="images/portfolioGraphs/lookatthisgraph.gif" alt="Demonstration of Graph Interaction" height="200"/>
+                    </a>
+                </li>
+                <li>
+                    <a class="uk-inline" href="images/portfolioGraphs/graphs2.png" data-caption="2 Axis Graph">
+                        <img src="images/portfolioGraphs/graphs2.png" alt="2 Axis Graph" height="200"/>
+                    </a>
+                </li>
+                <li>
+                    <a class="uk-inline" href="images/portfolioGraphs/graphs3.png" data-caption="3 Axis Graph">
+                        <img src="images/portfolioGraphs/graphs3.png" alt="3 Axis Graph" height="200"/>
+                    </a>
+                </li>
+                <li>
+                    <a class="uk-inline" href="images/portfolioGraphs/graphs4.png" data-caption="Chart Party">
+                        <img src="images/portfolioGraphs/graphs4.png" alt="Chart Party" height="200"/>
+                    </a>
+                </li>
+                <li>
+                    <a class="uk-inline" href="images/portfolioGraphs/graphs5.png" data-caption="Performance Measurement (Note: Instanced Mesh Vertex & Tri Counts are not Reported in Unity's Game View Statistics)">
+                        <img src="images/portfolioGraphs/graphs5.png" alt="Performance Measurement" height="200"/>
+                    </a>
+                </li>
+                <li>
+                    <a class="uk-inline" href="images/portfolioGraphs/graphs6.png" data-caption="Another Graph">
+                        <img src="images/portfolioGraphs/graphs6.png" alt="Another Graph" height="200"/>
+                    </a>
+                </li>
+            </ul>
+            <a class="uk-position-center-left uk-position-small" href uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small" href uk-slidenav-next uk-slider-item="next"></a>
+        </div>
+    </div>
+
+    <div id="solitaire" class="uk-margin uk-card uk-card-secondary uk-card-body ">
+        <h4>Serial Solitaire</h4>
+        <p>This was a last minute entry into a game jam with a cozy autumn theme. Since I had so little time, I decided to make my own solitaire variant! Technically it is very simple, just screen raycasts and object parenting. My inspiration for the design came from my frustration of dealing the King cards in normal solitaire. They don't stack with anything, so they can only be moved if there is an empty slot. I removed the King and just required each stack to have 2 Queens, and Queens can stack on top of each other. I also tried something new by adding a stack to the side that can hold 5 cards, but they can only be retrieved in the order they were put in. I'm very happy with how the design plays, it feels difficult but not too difficult, and the stack forces some fun strategy! Everytime I open it up again I get sucked in for an hour. I made the card designs as well as the board background myself, just using tileable textures and an image editor, and I think it looks quite good! This game taught me that it is much easier to make an actually good game when you manage scope properly.</p>
+        <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="finite: true">
+            <ul class="uk-slider-items uk-child-width-1-4@s uk-child-width-1-4@ uk-grid-small">
+                <li>
+                    <img src="images/project7/solitaire2.png" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project7/solitairegif1.gif" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project7/solitaire1.png" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project7/solitaire3.png" alt="banner" />
+                </li>
+            </ul>
+            <a class="uk-position-center-left uk-position-small" href uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small" href uk-slidenav-next uk-slider-item="next"></a>
+        </div>
+        <a class="uk-button-text uk-text-decoration-none" href="https://serialboxes.itch.io/serial-solitaire">
+            <span uk-icon="icon: link">
+            </span> Itch.io Page </a>
+    </div>
+
+    <div id="reminder" class="uk-margin uk-card uk-card-secondary uk-card-body ">
+        <h4>Soft Reminder</h4>
+        <p>I needed a periodic, soft and silent reminder for therapy work, but I could not find any apps that allowed this, so I made one myself! This is a simple Android app that runs a custom vibration pattern at a user defined rate. An app must have a foreground process to use the vibration motor, so I had to start up a foreground service from the background repeatedly. I used Android's Alarm Scheduler API, since precise timing was important to me. This approach is surprisingly kind to battery life, probably because my foreground service is so simple. The UI was made in Jetpack Compose, which might be the best UI framework ever conceived, I love it.</p>
+
+        <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="finite: true">
+            <ul class="uk-slider-items uk-child-width-1-4@s uk-child-width-1-4@ uk-grid-small">
+                <li>
+                    <img src="images/project2/reminder1.png" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project2/reminder2.png" alt="banner" />
+                </li>
+            </ul>
+            <a class="uk-position-center-left uk-position-small" href uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small" href uk-slidenav-next uk-slider-item="next"></a>
+        </div>
+        <!--
+        <div class="uk-child-width-expand uk-grid-small uk-text-center" uk-grid>
+            <div class="uk-width-1-4@s uk-width-1-4@">
+                <img src="images/project2/reminder1.png" alt="banner" />
+            </div>
+            <div class="uk-width-1-4@s uk-width-1-4@">
+                <img src="images/project2/reminder2.png" alt="banner" />
+            </div>
+            <div>
+                <img src="images/project2/reminder3.png" alt="banner" />
+            </div>
+        </div>
+        -->
+    </div>
+
+    <div id="cookie" class="uk-margin uk-card uk-card-secondary uk-card-body ">
+        <h4>Cookie Climber</h4>
+        <p>This is the first finished game of the Video Game Design Club at my University! My role in the project was primarily to teach other members how to program in Unity, since I was one of the most experienced people in the club. I taught C#, the basics of Unity's framework, physics programming, state machines, and importing 2D assets. I did make some contributions fixing bugs, hooking up the UI, and making some of the sprites, but I was mostly focused on coaching. For being a lot of people's first ever game, I think it came out really well!</p>
+        <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="finite: true">
+            <ul class="uk-slider-items uk-child-width-1-4@s uk-child-width-1-4@ uk-grid-small">
+                <li>
+                    <img src="images/project5/cookie1.png" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project5/cookiegif1.gif" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project5/cookie2.png" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project5/background2.png" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project5/cookie3.png" alt="banner" />
+                </li>
+            </ul>
+            <a class="uk-position-center-left uk-position-small" href uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small" href uk-slidenav-next uk-slider-item="next"></a>
+        </div>
+        <a class="uk-button-text uk-text-decoration-none" href="https://github.com/Video-Game-Design-Club/Team-2">
+            <span uk-icon="icon: link">
+            </span> Project Github </a>
+        <a class="uk-button-text uk-text-decoration-none" href="https://sac-game-design-club.itch.io/cookie-climber">
+            <span uk-icon="icon: link">
+            </span> Itch.io Page </a>
+    </div>
+
+    <div id="desert" class="uk-margin uk-card uk-card-secondary uk-card-body ">
+        <h4>Desert Bus 3D</h4>
+        <p>I used to have a friend a while ago who loved the Desert Bus Charity Marathon, so I made a 3d version of the game for him! It has a fully procedural terrain system based on heightmaps. It generates heightmap textures with a few octaves of Perlin Noise. The system also uses chunks with varying levels of detail to make far render distances possible! The terrain textures are just triplanar mapped in a shader. This project taught me so much, it is where my skills in many advanced game development topics began.</p>
+        <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="finite: true">
+            <ul class="uk-slider-items uk-child-width-1-4@s uk-child-width-1-4@ uk-grid-small">
+                <li>
+                    <img src="images/project10/bus1.png" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project10/bus2.png" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project10/bus3.png" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project10/bus4.png" alt="banner" />
+                </li>
+            </ul>
+            <a class="uk-position-center-left uk-position-small" href uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small" href uk-slidenav-next uk-slider-item="next"></a>
+        </div>
+    </div>
+
+    <div id="life" class="uk-margin uk-card uk-card-secondary uk-card-body ">
+        <h4>3D Game of Life</h4>
+        <p>This was one of my very first Unity projects! It allows you to build and save any initial conditions for a simulation you like. You can also change the rules for the simulation along the top (Green for create, Yellow for Survive, Red for Death) for any number of neighbors. In addition to teaching me the basics of Unity, I also learned how to serialize data, write it to disk, and read it back later. </p>
+        <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="finite: true">
+            <ul class="uk-slider-items uk-child-width-1-4@s uk-child-width-1-4@ uk-grid-small">
+                <li>
+                    <img src="images/project12/lifegif.gif" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project12/life1.png" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project12/life2.png" alt="banner" />
+                </li>
+            </ul>
+            <a class="uk-position-center-left uk-position-small" href uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small" href uk-slidenav-next uk-slider-item="next"></a>
+        </div>
+    </div>
+
+    <div id="wifi" class="uk-margin uk-card uk-card-secondary uk-card-body ">
+        <h4>Wifi Website</h4>
+        <p>My first university project was to make a website with a group, so we made one that monitors the wifi traffic of some popular campus buildings and estimates how good the signal will be. The goal was to help students find a good place to study. I made an Android App for it that used a REST API to pull data from the server, and then make helpful visualizations of that data for the user. This was my first serious Android development project, and I learned a lot about project structure and code organization as well as the Android framework itself.</p>
+    </div>
+
+</div>
+
+
+<a href="programming.html" class="uk-margin-xlarge-left uk-margin-medium-top uk-text-capitalize uk-button uk-button-default">Home</a>
+
+
+</section>
+<hr class="uk-margin-xlarge-left uk-margin-xlarge-right uk-margin-xlarge-bottom uk-margin-large-top">
+</div>
+<!-- Projects Section Ends -->
+    
+</body>
+</html>

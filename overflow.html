@@ -30,15 +30,16 @@
                 <div uk-dropdown="pos: bottom-center">
                     <ul class="uk-nav uk-dropdown-nav">
                         <li><a class="uk-text-bold" href="index.html" >Main Page</a></li>
-                        <li><a href="#rowland" uk-scroll="offset: 100">Rowland's Adventure</a></li>
+                        <li><a href="#rowland2" uk-scroll="offset: 100">Rowland's Adventure 2</a></li>
                         <li><a href="#bookstore" uk-scroll="offset: 100">Wooden Croaks Bookstore</a></li>
                         <li><a href="#blender" uk-scroll="offset: 100">3D Artwork Showcase</a></li>
+                        <li><a href="#rowland" uk-scroll="offset: 100">Rowland's Adventure</a></li>
                         <li><a href="#solitaire" uk-scroll="offset: 100">Serial Solitaire</a></li>
                         <li><a href="#reminder" uk-scroll="offset: 100">Soft Reminder App</a></li>
+                        <li><a href="#cluster" uk-scroll="offset: 100">Digital Instrument Cluster</a></li>
                         <li><a href="#cookie" uk-scroll="offset: 100">Cookie Climber</a></li>
                         <li><a href="#desert" uk-scroll="offset: 100">Desert Bus 3D</a></li>
                         <li><a href="#life" uk-scroll="offset: 100">3D Game of Life</a></li>
-                        <li><a href="#senior" uk-scroll="offset: 100">Senior Project</a></li>
                         <li><a href="#wifi" uk-scroll="offset: 100">Wifi Website School Project</a></li>
                     </ul>
                 </div>
@@ -75,15 +76,16 @@
             <li><a class="uk-button-text uk-text-capitalize">Projects</a>
                 <div uk-dropdown="shift: false; flip: false">
                     <ul class="uk-nav uk-dropdown-nav">
-                        <li><a href="#rowland" uk-scroll="offset: 100">Rowland's Adventure</a></li>
+                        <li><a href="#rowland2" uk-scroll="offset: 100">Rowland's Adventure 2</a></li>
                         <li><a href="#bookstore" uk-scroll="offset: 100">Wooden Croaks Bookstore</a></li>
                         <li><a href="#blender" uk-scroll="offset: 100">3D Artwork Showcase</a></li>
+                        <li><a href="#rowland" uk-scroll="offset: 100">Rowland's Adventure</a></li>
                         <li><a href="#solitaire" uk-scroll="offset: 100">Serial Solitaire</a></li>
                         <li><a href="#reminder" uk-scroll="offset: 100">Soft Reminder App</a></li>
+                        <li><a href="#cluster" uk-scroll="offset: 100">Digital Instrument Cluster</a></li>
                         <li><a href="#cookie" uk-scroll="offset: 100">Cookie Climber</a></li>
                         <li><a href="#desert" uk-scroll="offset: 100">Desert Bus 3D</a></li>
                         <li><a href="#life" uk-scroll="offset: 100">3D Game of Life</a></li>
-                        <li><a href="#senior" uk-scroll="offset: 100">Senior Project</a></li>
                         <li><a href="#wifi" uk-scroll="offset: 100">Wifi Website School Project</a></li>
                     </ul>
                 </div>
@@ -103,7 +105,7 @@
 <!-- Home -->
 <section class="uk-margin-small-left uk-margin-small-right uk-margin-large-top">
     <h1 class="uk-margin-xlarge-left uk-dark uk-text-left uk-margin-xlarge-right">Miscellaneous Projects</h1>
-    <p class="uk-margin-xlarge-left uk-dark uk-text-left uk-margin-xlarge-right">These are some older projects that show my history and experience with 3D and programming, but aren't representative of my current abilities.</p>
+    <p class="uk-margin-xlarge-left uk-dark uk-text-left uk-margin-xlarge-right">These are some of my other projects that show my history and experience with 3D and programming, but are not as relevant or aren't representative of my current abilities.</p>
 
 
 </section>
@@ -116,41 +118,80 @@
 
 <div class="uk-margin-xlarge-left uk-margin-xlarge-right uk-margin-large-top">
 
-    <div id="rowland" class="uk-margin uk-card uk-card-secondary uk-card-body ">
-        <h4>Rowland's Adventure</h4>
-        <p>This was my entry for a 2 day game jam about controlling gravity, mostly inspired by Super Mario Galaxy. The gravity effect was accomplished by detecting planets with large triggers, and then determining the direction of gravity with a specialized function that accounts for the player's relative position and the shape of the planet. I wanted to avoid the raycast method, as it has proven itself quite janky in the past. I modelled the character myself in Blender and animated it procedurally in C#. This way my first attempt at designing a level with a silent tutorial and a gradual difficulty progression. Playtests showed it wasn't quite effective, and unfortunately I ran out of time to fix it. I learned that if you wish to communicate to the player without words, you must use precise colors and symbols as your language instead.</p>
+    <div id="rowland2" class="uk-margin uk-card uk-card-secondary uk-card-body ">
+        <h4>Rowland's Adventure 2</h4>
+        <p>    Rowland's Adventure 2 is a 3D platforming game inspired by Super Mario Galaxy I made for my game
+            engine architecture class. It was made in a barebones Java engine designed by the professor. I had to implement
+            many features that I am used to having in Unity or Unreal into this engine myself. The game
+            features a fully physics driven character I programmed from scratch. It suports different actions and states, such
+            as jumping, falling, rolling, diving, and sliding. In addition, there are different surface materials in the game
+            that all have different properties and effect how the character moves. There is a custom planetoid system that uses
+            ghost colliders to detect which planet any physics object is closest to. It then calculates the correct force and 
+            direction of gravity based on the planet's properties. The game supports spherical and square shaped gravity fields 
+            of any strength. All the planets are driven by heightmaps done in the vertex shader. I wrote a custom lighting shader
+            for all objects to get the cell shaded aesthetic of the game. The dialogue and NPC system was written from scratch
+            to allow for dialogue pop ups and changing character animations. To get all this working, there is an entire document 
+            of fixes and additions I made primarily to the engine's rendering and physics systems.
+        </p> 
         <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="finite: true">
-            <ul class="uk-slider-items uk-child-width-1-4@s uk-child-width-1-4@ uk-grid-small">
+            <ul class="uk-slider-items uk-grid-small uk-child-width-1-3@s uk-child-width-1-3@" uk-lightbox>
                 <li>
-                    <img src="images/project1/rowlandtitle.png" alt="banner" />
+                    <a class="uk-inline" href="images/portfolioRowland/rowland2.gif" data-caption="Typical Game Scene">
+                        <img src="images/portfolioRowland/rowland2.gif" alt="Typical Game Scene" height="200"/>
+                    </a>
                 </li>
                 <li>
-                    <img src="images/project1/rowland.png" alt="banner" />
+                    <a class="uk-inline" href="images/portfolioRowland/rowland2.png" data-caption="NPC Cutscene">
+                        <img src="images/portfolioRowland/rowland2.png" alt="NPC Cutscene" height="200"/>
+                    </a>
                 </li>
                 <li>
-                    <img src="images/project1/rowlandgif.gif" alt="banner" />
+                    <a class="uk-inline" href="images/portfolioRowland/rowland3.gif" data-caption="Planetoid Gravity in Game">
+                        <img src="images/portfolioRowland/rowland3.gif" alt="Planetoid Gravity in Game" height="200"/>
+                    </a>
                 </li>
                 <li>
-                    <img src="images/project1/rowlandgif2.gif" alt="banner" />
+                    <a class="uk-inline" href="images/portfolioRowland/rowland3.png" data-caption="Different Physics Surfaces">
+                        <img src="images/portfolioRowland/rowland3.png" alt="Different Physics Surfaces" height="200"/>
+                    </a>
                 </li>
                 <li>
-                    <img src="images/project1/rowland2.png" alt="banner" />
+                    <a class="uk-inline" href="images/portfolioRowland/rowland1.gif" data-caption="Platforming">
+                        <img src="images/portfolioRowland/rowland1.gif" alt="Platforming" height="200"/>
+                    </a>
                 </li>
                 <li>
-                    <img src="images/project1/rowland3.png" alt="banner" />
+                    <a class="uk-inline" href="images/portfolioRowland/rowland1.png" data-caption="Title Screen">
+                        <img src="images/portfolioRowland/rowland1.png" alt="Title Screen" height="200"/>
+                    </a>
+                </li>
+                <li>
+                    <a class="uk-inline" href="images/portfolioRowland/rowland4.png" data-caption="Cube Planetoids">
+                        <img src="images/portfolioRowland/rowland4.png" alt="Cube Planetoids" height="200"/>
+                    </a>
+                </li>
+                <li>
+                    <a class="uk-inline" href="images/portfolioRowland/rowland5.png" data-caption="Low Gravity Asteroids">
+                        <img src="images/portfolioRowland/rowland5.png" alt="Low Gravity Asteroids" height="200"/>
+                    </a>
                 </li>
             </ul>
             <a class="uk-position-center-left uk-position-small" href uk-slidenav-previous uk-slider-item="previous"></a>
             <a class="uk-position-center-right uk-position-small" href uk-slidenav-next uk-slider-item="next"></a>
         </div>
-        <a class="uk-button-text uk-text-decoration-none" href="https://serialboxes.itch.io/rowlands-adventure">
-            <span uk-icon="icon: link">
-            </span> Itch.io Page </a>
     </div>
 
     <div id="bookstore" class="uk-margin uk-card uk-card-secondary uk-card-body ">
         <h4>Wooden Croaks Bookstore</h4>
-        <p>This game was a group project was a fantastical take on the game Unpacking, where you run a bookstore in a magic forest. I ended up doing a lot of work on the project. I programmed the holding and placing prop mechanics, which work by defining a grid in world space, and snapping objects to that grid based on how many squares their footprint occupies. I made a basic dialogue system, game sequencing system, and implemented audio. I made an outline shader effect, which is a Scriptable Renderer Feature in Unity's URP that renders all the object silhouettes to a render texture with a different color. It then runs an edge detection pass over the color, depth, and normal buffers to detect edges, and blits the black outline pixels back to the camera's color buffer. It looks good but is finicky to calibrate, and I have since moved on to outline effects with manually defined edges.</p>
+        <p>This game was a group project that was a fantastical take on the game Unpacking, where you run a 
+            bookstore in a magic forest. I ended up doing a lot of work on the project. I programmed the holding 
+            and placing prop mechanics, which work by defining a grid in world space, and snapping objects to 
+            that grid based on how many squares their footprint occupies. I made a basic dialogue system that supported
+            showing a full screen text prompt and triggering in game events. There was also a main sequencing system
+            that worked on a day system, that allowed non-programmers to specify dialogue events and what props would
+            be spawned for the player for each day in the game. I made an outline shader effect, which is a Scriptable 
+            Renderer Feature in Unity's URP that runs edge detection on all objects  based on depth, normals, 
+            and color, and renders black pixels where the test passes.</p>
         <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="finite: true">
             <ul class="uk-slider-items uk-child-width-1-4@s uk-child-width-1-4@ uk-grid-small">
                 <li>
@@ -237,6 +278,38 @@
         </div>
     </div>
 
+    <div id="rowland" class="uk-margin uk-card uk-card-secondary uk-card-body ">
+        <h4>Rowland's Adventure</h4>
+        <p>This was my entry for a 2 day game jam about controlling gravity, mostly inspired by Super Mario Galaxy. The gravity effect was accomplished by detecting planets with large triggers, and then determining the direction of gravity with a specialized function that accounts for the player's relative position and the shape of the planet. I wanted to avoid the raycast method, as it has proven itself quite janky in the past. I modelled the character myself in Blender and animated it procedurally in C#. This way my first attempt at designing a level with a silent tutorial and a gradual difficulty progression. Playtests showed it wasn't quite effective, and unfortunately I ran out of time to fix it. I learned that if you wish to communicate to the player without words, you must use precise colors and symbols as your language instead.</p>
+        <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="finite: true">
+            <ul class="uk-slider-items uk-child-width-1-4@s uk-child-width-1-4@ uk-grid-small">
+                <li>
+                    <img src="images/project1/rowlandtitle.png" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project1/rowland.png" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project1/rowlandgif.gif" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project1/rowlandgif2.gif" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project1/rowland2.png" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project1/rowland3.png" alt="banner" />
+                </li>
+            </ul>
+            <a class="uk-position-center-left uk-position-small" href uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small" href uk-slidenav-next uk-slider-item="next"></a>
+        </div>
+        <a class="uk-button-text uk-text-decoration-none" href="https://serialboxes.itch.io/rowlands-adventure">
+            <span uk-icon="icon: link">
+            </span> Itch.io Page </a>
+    </div>
+
     <div id="solitaire" class="uk-margin uk-card uk-card-secondary uk-card-body ">
         <h4>Serial Solitaire</h4>
         <p>This was a last minute entry into a game jam with a cozy autumn theme. Since I had so little time, I decided to make my own solitaire variant! Technically it is very simple, just screen raycasts and object parenting. My inspiration for the design came from my frustration of dealing the King cards in normal solitaire. They don't stack with anything, so they can only be moved if there is an empty slot. I removed the King and just required each stack to have 2 Queens, and Queens can stack on top of each other. I also tried something new by adding a stack to the side that can hold 5 cards, but they can only be retrieved in the order they were put in. I'm very happy with how the design plays, it feels difficult but not too difficult, and the stack forces some fun strategy! Everytime I open it up again I get sucked in for an hour. I made the card designs as well as the board background myself, just using tileable textures and an image editor, and I think it looks quite good! This game taught me that it is much easier to make an actually good game when you manage scope properly.</p>
@@ -292,6 +365,42 @@
             </div>
         </div>
         -->
+    </div>
+
+    <div id="cluster" class="uk-margin uk-card uk-card-secondary uk-card-body ">
+        <h4>Digital Instrument Cluster</h4>
+        <p>    For my senior project, I was on a team developing a digital instrument cluster for an experimental
+            desert race car for the school's engineering department. It is an embeded system project designed
+            to run on both Windows and Linux written in Python and C++. The front end takes in data and uses it to
+            draw a dashboard directly with OpenGL. I was responsible for all the backend data handling. I wrote a reader
+            script that interfaces with our hardware device that pulls data from the car's data bus system, called CANBUS.
+            This data goes through an interpretation script that I designed to allow future engineering students to add
+            and program in additional sensors for the system. This data is also logged in real time to a .csv file. I made
+            it format the data for easier data analysis, and the file is split up into multiple chunks if it gets too large
+            to prevent crashes in Google Sheets. Since the car itself is still under construction, I also made a test reader
+            and data that simulates real car data and pipes it into the dashboard.
+        </p>
+        <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="finite: true">
+            <ul class="uk-slider-items uk-grid-small uk-child-width-1-3@s uk-child-width-1-3@" uk-lightbox>
+                <li>
+                    <a class="uk-inline" href="images/portfolioCluster/dash.png" data-caption="Dashboard Running">
+                        <img src="images/portfolioCluster/dash.png" alt="Dashboard Running" height="200"/>
+                    </a>
+                </li>
+                <li>
+                    <a class="uk-inline" href="images/portfolioCluster/dash2.png" data-caption="Project Final Presentation Board">
+                        <img src="images/portfolioCluster/dash2.png" alt="Project Final Presentation Board" height="200"/>
+                    </a>
+                </li>
+                <li>
+                    <a class="uk-inline" href="images/portfolioCluster/dataaaa.gif" data-caption="Output of Test Data Generator">
+                        <img src="images/portfolioCluster/dataaaa.gif" alt="Output of Test Data Generator" height="200"/>
+                    </a>
+                </li>
+            </ul>
+            <a class="uk-position-center-left uk-position-small" href uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small" href uk-slidenav-next uk-slider-item="next"></a>
+        </div>
     </div>
 
     <div id="cookie" class="uk-margin uk-card uk-card-secondary uk-card-body ">
@@ -362,20 +471,6 @@
                 </li>
                 <li>
                     <img src="images/project12/life2.png" alt="banner" />
-                </li>
-            </ul>
-            <a class="uk-position-center-left uk-position-small" href uk-slidenav-previous uk-slider-item="previous"></a>
-            <a class="uk-position-center-right uk-position-small" href uk-slidenav-next uk-slider-item="next"></a>
-        </div>
-    </div>
-
-    <div id="senior" class="uk-margin uk-card uk-card-secondary uk-card-body ">
-        <h4>Senior Project</h4>
-        <p>My senior project team is developing a custom dashboard display and onboard computer for the Engineering Department's experimental electric offroad racecar. It uses a Linux box that is running a custom OpenGL UI on a touch display, as well as logging telemetry from all the sensors on the vehicle. I am working on developing the backend, which manages all the running processes and facilitates data transfer between them. I have written scripts to create synthetic data streams to test logging, take live incoming data and write it to a CSV file, and recover files that may be corrupted if the system's power is unexpectedly cut.</p>
-        <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="finite: true">
-            <ul class="uk-slider-items uk-child-width-1-4@s uk-child-width-1-4@ uk-grid-small">
-                <li>
-                    <img src="images/project4/dataaaa.gif" alt="banner" />
                 </li>
             </ul>
             <a class="uk-position-center-left uk-position-small" href uk-slidenav-previous uk-slider-item="previous"></a>

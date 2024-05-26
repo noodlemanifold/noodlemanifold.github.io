@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/uikit.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <script src="js/uikit.js"></script>
+    <script src="js/uikit-icons.js"></script>
+
+    <title>Roxy's Portfolio</title>
+</head>
+<body>
+<!-- Navigation Bar -->
+<nav class="uk-navbar-container uk-visible@m " uk-navbar uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+    
+    <div class="uk-navbar-left">
+        <a href="#" class="uk-navbar-item uk-logo uk-margin-large-left">
+            <img src="images/logo2.png" alt="Logo" height="50" width="50"/>
+        </a>
+        <a href="#" class="uk-navbar-item uk-logo uk-dark">Roxanne Campbell</a>
+    </div>
+    <div class="uk-navbar-right uk-margin-xlarge-right">
+
+        <ul class="uk-navbar-nav uk-dark">
+            <li><a class="uk-button-text uk-text-capitalize" href="#projects"  uk-scroll="offset: 100">Projects</a>
+                <div uk-dropdown="pos: bottom-center">
+                    <ul class="uk-nav uk-dropdown-nav">
+                        <li><a href="#rowland2" uk-scroll="offset: 100" class="uk-margin-small-left">Rowland's Adventure 2</a></li>
+                        <li><a href="#bookstore" uk-scroll="offset: 100" class="uk-margin-small-left">Wooden Croaks Bookstore</a></li>
+                        <li><a href="#cluster" uk-scroll="offset: 100" class="uk-margin-small-left">Digital Instrument Cluster</a></li>
+                        <li><a href="#grass" uk-scroll="offset: 100" class="uk-margin-small-left">GPU Instanced Grass</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a class="uk-button-text uk-text-capitalize" href="#about" uk-scroll="offset: 100" uk-scroll>About</a></li>
+            <li><a class="uk-button-text uk-text-capitalize" href="#contact" uk-scroll="offset: 100">Contact</a></li>
+
+        </ul>
+
+    </div>
+</nav>
+<!-- Navigation Bar Ends  -->
+
+<!-- Navigation Bar Mobile -->
+<nav class="uk-navbar-container uk-hidden@m " uk-navbar uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+    
+    <div class="uk-navbar-left uk-margin-small-left">
+        <a href="" class="uk-navbar-item uk-logo uk-dark">Roxanne Campbell</a>
+    </div>
+    <div class="uk-navbar-right uk-margin-xlarge-right">
+
+        <ul class="uk-navbar-nav uk-dark">
+            <li><button uk-toggle="target: #offcanvas-nav" type="button" uk-navbar-toggle-icon></button></li>
+
+        </ul>
+
+    </div>
+</nav>
+<div id="offcanvas-nav" uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+
+        <ul class="uk-nav uk-nav-primary">
+            <li class="uk-active"><a href="#" uk-scroll>Home</a></li>
+            <li><a class="uk-button-text uk-text-capitalize">Projects</a>
+                <div uk-dropdown="shift: false; flip: false">
+                    <ul class="uk-nav uk-dropdown-nav">
+                        <li><a href="#rowland2" uk-scroll="offset: 100" class="uk-margin-small-left">Rowland's Adventure 2</a></li>
+                        <li><a href="#bookstore" uk-scroll="offset: 100" class="uk-margin-small-left">Wooden Croaks Bookstore</a></li>
+                        <li><a href="#cluster" uk-scroll="offset: 100" class="uk-margin-small-left">Digital Instrument Cluster</a></li>
+                        <li><a href="#grass" uk-scroll="offset: 100" class="uk-margin-small-left">GPU Instanced Grass</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a class="uk-button-text uk-text-capitalize" href="#about" uk-scroll="offset: 100" uk-scroll>About</a></li>
+            <li><a class="uk-button-text uk-text-capitalize" href="#contact" uk-scroll="offset: 100">Contact</a></li>
+
+        </ul>
+    </div>
+</div>
+
+<!-- Navigation Bar Mobile Ends -->
+
+<!-- Home -->
+<section class="uk-margin-small-left uk-margin-small-right uk-margin-small-top">
+    <div class="uk-background-height-1-1 uk-container uk-height-viewport uk-width-1-1" style="background-image: url(images/background.png);">
+        <div class="uk-position-center">
+            <h1 class="uk-margin-xlarge-left uk-dark uk-text-left uk-margin-xlarge-right">I'm Roxanne Campbell, a  
+                Programmer and Game Developer.</h1>
+            <a href="#projects" class="uk-margin-xlarge-left uk-dark uk-text-capitalize uk-button uk-button-primary" uk-scroll="offset: 100">Projects</a>
+        </div> 
+    </div>
+
+
+</section>
+
+<!-- Home Ends -->
+
+<!-- Projects Section -->
+<hr class="uk-margin-xlarge-left uk-margin-xlarge-right">
+<section id="projects" class="uk-margin-small-left uk-margin-small-right uk-margin-medium-top uk-margin-large-bottom">
+<h2 id="graphics" class="uk-margin-xlarge-left uk-dark">Projects</h3>
+
+<div class="uk-margin-xlarge-left uk-margin-xlarge-right">
+
+    <div id="rowland2" class="uk-margin uk-card uk-card-secondary uk-card-body ">
+        <h4>Rowland's Adventure 2</h4>
+        <p>    Rowland's Adventure 2 is a 3D platforming game inspired by Super Mario Galaxy I made for my game
+            engine architecture class. It was made in a barebones Java engine designed by the professor. I had to implement
+            many features that I am used to having in Unity or Unreal into this engine myself. The game
+            features a fully physics driven character I programmed from scratch. It suports different actions and states, such
+            as jumping, falling, rolling, diving, and sliding. In addition, there are different surface materials in the game
+            that all have different properties and effect how the character moves. There is a custom planetoid system that uses
+            ghost colliders to detect which planet any physics object is closest to. It then calculates the correct force and 
+            direction of gravity based on the planet's properties. The game supports spherical and square shaped gravity fields 
+            of any strength. All the planets are driven by heightmaps done in the vertex shader. I wrote a custom lighting shader
+            for all objects to get the cell shaded aesthetic of the game. The dialogue and NPC system was written from scratch
+            to allow for dialogue pop ups and changing character animations. To get all this working, there is an entire document 
+            of fixes and additions I made primarily to the engine's rendering and physics systems.
+        </p> 
+        <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="finite: true">
+            <ul class="uk-slider-items uk-grid-small uk-child-width-1-3@s uk-child-width-1-3@" uk-lightbox>
+                <li>
+                    <a class="uk-inline" href="images/portfolioRowland/rowland2.gif" data-caption="Typical Game Scene">
+                        <img src="images/portfolioRowland/rowland2.gif" alt="Typical Game Scene" height="200"/>
+                    </a>
+                </li>
+                <li>
+                    <a class="uk-inline" href="images/portfolioRowland/rowland2.png" data-caption="NPC Cutscene">
+                        <img src="images/portfolioRowland/rowland2.png" alt="NPC Cutscene" height="200"/>
+                    </a>
+                </li>
+                <li>
+                    <a class="uk-inline" href="images/portfolioRowland/rowland3.gif" data-caption="Planetoid Gravity in Game">
+                        <img src="images/portfolioRowland/rowland3.gif" alt="Planetoid Gravity in Game" height="200"/>
+                    </a>
+                </li>
+                <li>
+                    <a class="uk-inline" href="images/portfolioRowland/rowland3.png" data-caption="Different Physics Surfaces">
+                        <img src="images/portfolioRowland/rowland3.png" alt="Different Physics Surfaces" height="200"/>
+                    </a>
+                </li>
+                <li>
+                    <a class="uk-inline" href="images/portfolioRowland/rowland1.gif" data-caption="Platforming">
+                        <img src="images/portfolioRowland/rowland1.gif" alt="Platforming" height="200"/>
+                    </a>
+                </li>
+                <li>
+                    <a class="uk-inline" href="images/portfolioRowland/rowland1.png" data-caption="Title Screen">
+                        <img src="images/portfolioRowland/rowland1.png" alt="Title Screen" height="200"/>
+                    </a>
+                </li>
+                <li>
+                    <a class="uk-inline" href="images/portfolioRowland/rowland4.png" data-caption="Cube Planetoids">
+                        <img src="images/portfolioRowland/rowland4.png" alt="Cube Planetoids" height="200"/>
+                    </a>
+                </li>
+                <li>
+                    <a class="uk-inline" href="images/portfolioRowland/rowland5.png" data-caption="Low Gravity Asteroids">
+                        <img src="images/portfolioRowland/rowland5.png" alt="Low Gravity Asteroids" height="200"/>
+                    </a>
+                </li>
+            </ul>
+            <a class="uk-position-center-left uk-position-small" href uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small" href uk-slidenav-next uk-slider-item="next"></a>
+        </div>
+    </div>
+
+    <div id="bookstore" class="uk-margin uk-card uk-card-secondary uk-card-body ">
+        <h4>Wooden Croaks Bookstore</h4>
+        <p>This game was a group project that was a fantastical take on the game Unpacking, where you run a 
+            bookstore in a magic forest. I ended up doing a lot of work on the project. I programmed the holding 
+            and placing prop mechanics, which work by defining a grid in world space, and snapping objects to 
+            that grid based on how many squares their footprint occupies. I made a basic dialogue system that supported
+            showing a full screen text prompt and triggering in game events. There was also a main sequencing system
+            that worked on a day system, that allowed non-programmers to specify dialogue events and what props would
+            be spawned for the player for each day in the game. I made an outline shader effect, which is a Scriptable 
+            Renderer Feature in Unity's URP that runs edge detection on all objects  based on depth, normals, 
+            and color, and renders black pixels where the test passes.</p>
+        <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="finite: true">
+            <ul class="uk-slider-items uk-child-width-1-4@s uk-child-width-1-4@ uk-grid-small">
+                <li>
+                    <img src="images/project3/bookstore1.png" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project3/bookstoregif1.gif" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project3/bookstoregif3.gif" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project3/craig2.gif" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project3/bookstore2.png" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project3/bookstore3.png" alt="banner" />
+                </li>
+                <li>
+                    <img src="images/project3/bookstore4.png" alt="banner" />
+                </li>
+            </ul>
+            <a class="uk-position-center-left uk-position-small" href uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small" href uk-slidenav-next uk-slider-item="next"></a>
+        </div>
+        
+    </div>
+
+    <div id="cluster" class="uk-margin uk-card uk-card-secondary uk-card-body ">
+        <h4>Digital Instrument Cluster</h4>
+        <p>    For my senior project, I was on a team developing a digital instrument cluster for an experimental
+            desert race car for the school's engineering department. It is an embeded system project designed
+            to run on both Windows and Linux written in Python and C++. The front end takes in data and uses it to
+            draw a dashboard directly with OpenGL. I was responsible for all the backend data handling. I wrote a reader
+            script that interfaces with our hardware device that pulls data from the car's data bus system, called CANBUS.
+            This data goes through an interpretation script that I designed to allow future engineering students to add
+            and program in additional sensors for the system. This data is also logged in real time to a .csv file. I made
+            it format the data for easier data analysis, and the file is split up into multiple chunks if it gets too large
+            to prevent crashes in Google Sheets. Since the car itself is still under construction, I also made a test reader
+            and data that simulates real car data and pipes it into the dashboard.
+        </p>
+        <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="finite: true">
+            <ul class="uk-slider-items uk-grid-small uk-child-width-1-3@s uk-child-width-1-3@" uk-lightbox>
+                <li>
+                    <a class="uk-inline" href="images/portfolioCluster/dash.png" data-caption="Dashboard Running">
+                        <img src="images/portfolioCluster/dash.png" alt="Dashboard Running" height="200"/>
+                    </a>
+                </li>
+                <li>
+                    <a class="uk-inline" href="images/portfolioCluster/dash2.png" data-caption="Project Final Presentation Board">
+                        <img src="images/portfolioCluster/dash2.png" alt="Project Final Presentation Board" height="200"/>
+                    </a>
+                </li>
+                <li>
+                    <a class="uk-inline" href="images/portfolioCluster/dataaaa.gif" data-caption="Output of Test Data Generator">
+                        <img src="images/portfolioCluster/dataaaa.gif" alt="Output of Test Data Generator" height="200"/>
+                    </a>
+                </li>
+            </ul>
+            <a class="uk-position-center-left uk-position-small" href uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small" href uk-slidenav-next uk-slider-item="next"></a>
+        </div>
+    </div>
+
+    <div id="grass" class="uk-margin uk-card uk-card-secondary uk-card-body ">
+        <h4>GPU Instanced Grass</h4>
+        <p>    I saw a GDC talk on making grass with instanced geometry, and wanted to give it a go myself.
+            This effect uses GPU instanced grass blades positioned in a compute shader. It also calculates a 
+            wind texture in real time from stacked sine waves in another compute shader to animate every individual 
+            grass blade.
+        </p> 
+        <p>    When the project is first run, or whenever the grass object changes, the grass initialization compute 
+            shader is executed. It fills a Compute Buffer with Grass objects that contain information about the world position,
+            wind uv coordinates, and size for each blade of grass. Every frame, a separate compute shader is executed to generate 
+            a wind noise texture. This is done using sine waves stacked at different frequencies to model large gusts of wind 
+            with smaller vortexes disturbing the grass. The resulting texture is sent to the grass blade material, and a call 
+            is made to render an instanced grass blade mesh for every entry in the grass blade buffer. The grass model itself 
+            is a long pointy triangle with 3 horizontal subdivisions. In the vertex shader, the grass blade is moved to the position 
+            stored in the grass blade buffer. It then offsets each vertex in the specified wind direction depending on the value of 
+            the wind texture at its position and how high the vertex is up off the ground. Each blade is also given a random width and 
+            height in a specified range so they are not all identical. The lighting model is very simple, all it does is interpolate 
+            between a tip color, blade color, and base color, and multiplies that by a simple Lambertian Diffuse factor.
+        </p> 
+        <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="finite: true">
+            <ul class="uk-slider-items uk-grid-small uk-child-width-1-3@s uk-child-width-1-3@" uk-lightbox>
+                <li>
+                    <a class="uk-inline" href="images/portfolioGrass/grass1.gif" data-caption="Grass Scene GIF">
+                        <img src="images/portfolioGrass/grass1.gif" alt="Grass Scene GIF" height="200"/>
+                    </a>
+                </li>
+                <li>
+                    <a class="uk-inline" href="images/portfolioGrass/grass2.png" data-caption="Grass Scene Still">
+                        <img src="images/portfolioGrass/grass2.png" alt="Grass Scene Still" height="200"/>
+                    </a>
+                </li>
+                <li>
+                    <a class="uk-inline" href="images/portfolioGrass/grass3.png" data-caption="Editor View">
+                        <img src="images/portfolioGrass/grass3.png" alt="Editor View" height="200"/>
+                    </a>
+                </li>
+            </ul>
+            <a class="uk-position-center-left uk-position-small" href uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small" href uk-slidenav-next uk-slider-item="next"></a>
+        </div>
+    </div>
+
+</div>
+<!--
+<hr class="uk-margin-xlarge-left uk-margin-xlarge-right uk-margin-large-top">
+<h2 id="development" class="uk-margin-xlarge-left uk-margin-medium-top uk-dark">Game Development</h3>
+
+    <div class="uk-margin-xlarge-left uk-margin-xlarge-right">
+    
+        <div id="controller" class="uk-margin uk-card uk-card-secondary uk-card-body ">
+            <h4>Physics Based Character Controller</h4>
+            <p>bla.</p> 
+            <br>
+            <br>
+            <br>
+        </div>
+    
+    </div>
+    -->
+
+    <a href="overflow2.html" class="uk-margin-xlarge-left uk-margin-medium-top uk-text-capitalize uk-button uk-button-default">Additional Projects</a>
+
+
+</section>
+<hr class="uk-margin-xlarge-left uk-margin-xlarge-right">
+</div>
+<!-- Projects Section Ends -->
+
+<!-- About Me -->
+<section id="about" class="uk-margin-small-left uk-margin-small-right uk-margin-large-top uk-margin-large-bottom">
+<h3 class="uk-margin-xlarge-left uk-light">About Me</h3>
+<p class="uk-margin-xlarge-left uk-margin-xlarge-right">    My name is Roxanne, but I go by Roxy. I am an aspiring developer 
+    and game designer! Creativity has been a strong driving force my entire life, I have been making things since I was a 
+    child. I taught myself programming to make a small Unity game when I was in middle school, and I have been coding ever 
+    since. I have worked on many projects of many types since then, and I've learned something from each. This has given 
+    me years of experience problem solving and coding. Many times I worked with others, and learned how to effectively 
+    communicate and work as a team. I am an alumni of the University of California Sacramento, and graduated in May 2024. <br> 
+    <br>    I have learned many technical skills, both in school and on my own. I am proficient in C, C++, C#, Java,
+    Python, GLSL & HLSL, Kotlin, and Javascript. I have worked on over a dozen personal game and programming projects for over a decade.
+    I know Calculus and Linear Algebra, and I am very comfortable using vector and matrix math to manipulate objects in 
+    3D space. My experience is mostly in the Unity game engine, but I also know the basics of Unreal and Godot. I have used
+    Android Studio for multiple projects, and know Android frameworks, APIs, and lifecycles. I have experience with low level programming
+    in C and other languages from my senior project and my Operating Systems classes. I am also familiar with web technologies,
+    languages, and frameworks, as demonstrated by this website I made myself! I am always eager to learn more about advanced programming techniques on both the CPU and GPU!</p>
+
+<!-- About Me Ends -->
+
+<hr class="uk-margin-xlarge-left uk-margin-xlarge-right uk-margin-large-top">
+
+<!-- Contact -->
+<section id="contact" class="uk-margin-small-left uk-margin-small-right uk-margin-large-top uk-margin-large-bottom">
+    <h3 class="uk-margin-xlarge-left uk-light">Contact</h3>
+        <div class=" uk-margin-xlarge-left">
+            <a class="uk-button-text uk-text-decoration-none" href="mailto:roxannecampbell244@gmail.com">
+                <span uk-icon="icon: mail">
+                </span> roxannecampbell244@gmail.com </a>
+        </div>
+        <div class="uk-margin-xlarge-left uk-margin-small-top">
+            <a class="uk-button-text uk-text-decoration-none " href="https://github.com/noodlemanifold">
+                <span uk-icon="icon: github">
+                </span> /noodlemanifold </a>
+        </div>
+        <div class="uk-margin-xlarge-left uk-margin-small-top">
+            <a class="uk-button-text uk-text-decoration-none" href="https://www.linkedin.com/in/roxanne-campbell-39829b2bb/">
+                <span uk-icon="icon: linkedin">
+                </span> Roxanne Campbell </a>
+        </div>
+
+
+<!-- Contact Ends-->
+
+
+
+</section>
+
+<hr class="uk-margin-xlarge-left uk-margin-xlarge-right uk-margin-xlarge-bottom">
+    
+</body>
+</html>
